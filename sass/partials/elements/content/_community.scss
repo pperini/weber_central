@@ -1,0 +1,13 @@
+.community-feature-heading {
+	font-size: $community-feature-heading;
+
+	@include useFontDinMedium();
+
+	&.community-recipe {
+		padding-bottom: 7px;
+	}
+}
+
+.community-user-search-container {
+	padding-bottom: 9px;
+}

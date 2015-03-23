@@ -1,0 +1,200 @@
+$online-worldpartner-dealer-height: 190px;
+.online-dealer-search-list {
+	margin-bottom: 100px;
+	border-bottom: 1px solid $dealer-search-border;
+
+	.dealer-search-item {
+		padding-top: 25px;
+		padding-bottom: 21px;
+		border-top: 1px solid $dealer-search-item-border;
+
+		.information:hover,
+		&:hover .information {
+			strong {
+				color: $dealer-search-name-hover;
+			}
+		}
+
+		.information {
+			display: block;
+			text-align: center;
+			color: $dealer-search-website;
+			font-size: $dealer-search-website-size;
+
+			strong {
+				display: block;
+				padding-top: 10px;
+				font-weight: normal;
+				padding-bottom: 10px;
+				color: $dealer-search-name;
+				font-size: $dealer-search-name-size;
+
+				@include useFontDinMedium();
+			}
+		}
+
+		.button-action {
+			margin-top: 55px;
+		}
+
+		img {
+			margin: 0 auto;
+			display: block;
+		}
+
+		&.first {
+			border-top: 1px solid $dealer-search-border;
+		}
+	}
+}
+
+.premium-online-dealer {
+	position: relative;
+
+	img {
+		top: -92px;
+		right: -270px;
+		position: absolute;
+	}
+}
+
+.dealer-type-world-partner {
+	&.online-dealer-search-list {
+		border-top: 2px solid $black;
+		border-bottom: 0;
+
+		.dealer-search-item {
+			border-top: 0;
+			padding-top: 2px;
+			padding-bottom: 0;
+			height: $online-worldpartner-dealer-height;
+
+			.information {
+				color: $red;
+				text-align: left;
+
+				strong {
+					color: $white;
+					padding-top: 0;
+					padding-bottom: 5px;
+				}
+			}
+
+			.button-action {
+				margin-left: 0;
+				margin-top: 45px;
+
+				a {
+					margin-bottom: 0;
+				}
+			}
+
+			.logo {
+				height: 100%;
+				border-bottom: 2px solid $black;
+
+				a {
+					padding-top: 64px;
+					display: block;
+				}
+
+				img {
+					margin: 0;
+				}
+			}
+
+			.infos {
+				width: 231px;
+				padding: 30px;
+				background: $black;
+				border-bottom: 2px solid $white;
+				height: ($online-worldpartner-dealer-height - 30*2);
+
+
+			}
+
+			&.first {
+				padding-top: 0;
+			}
+
+			&.last {
+				.infos {
+					border-bottom: 2px solid $black;
+				}
+			}
+		}
+	}
+}
+
+.dealer-type-shop,
+.dealer-type-partner-store {
+	margin-bottom: 0;
+	padding-bottom: 100px;
+	border-bottom: 2px solid $dealer-search-border;
+
+	.dealer-search-item {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		border-top: 2px solid $dealer-search-item-border;
+
+		.information:hover,
+		&:hover .information {
+			strong {
+				color: $dealer-search-name-hover;
+			}
+		}
+
+		.dealer-logo {
+			width: 165px;
+		}
+
+		.information {
+			display: block;
+			text-align: left;
+			color: $dealer-search-website;
+			font-size: $dealer-search-website-size;
+
+			@include useFontDin();
+
+			strong {
+				display: block;
+				padding-top: 0;
+				font-weight: normal;
+				padding-bottom: 0;
+				color: $dealer-search-name;
+				font-size: $dealer-search-name-size;
+
+				@include useFontDinMedium();
+			}
+		}
+
+		.button-action {
+			margin-top: 55px;
+		}
+
+		img {
+			margin: 0;
+			display: block;
+		}
+
+		&.first {
+			border-top: 2px solid $dealer-search-item-border;
+		}
+
+		&.last {
+			border-bottom: 2px solid $dealer-search-item-border;
+		}
+	}
+}
+.dealer-type-shop {
+	border-bottom: 0;
+	.dealer-search-item {
+		.information {
+			color: $dealer-search-name;
+		}
+
+		&.first {
+			border-top: 0;
+		}
+	}
+}

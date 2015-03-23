@@ -1,0 +1,62 @@
+h1,
+h2,
+h3,
+h4 {
+	font-weight: normal;
+
+	a {
+		text-decoration: none;
+	}
+}
+
+h1 {
+	color: $content-h1;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	font-size: $content-h1-size;
+	line-height: $content-h1-line-height;
+
+	@include useFontDinBoldCondensed();
+
+	a {
+		color: $content-h1;
+	}
+}
+
+h2 {
+	padding: 0;
+	color: $content-h2;
+	text-transform: uppercase;
+	font-size: $content-h2-size;
+
+	@include useFontDinLightCondensed();
+
+	a {
+		color: $content-h2;
+	}
+}
+
+h3 {
+	padding: 0 0 17px;
+	color: $content-h3;
+	text-transform: uppercase;
+	font-size: $content-h3-size;
+
+	@include useFontDin();
+
+	a {
+		color: $content-h3;
+	}
+}
+
+h4 {
+	padding: 0 0 9px;
+	color: $content-h4;
+	font-size: $content-h4-size;
+
+	@include useFontDinMedium();
+
+	a {
+		color: $content-h4;
+	}
+}

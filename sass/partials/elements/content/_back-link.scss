@@ -1,0 +1,11 @@
+.back {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: $product-info-back-link;
+	font-size: $product-info-back-link-size;
+
+	&:hover,
+	a:hover {
+		color: $product-info-back-link-hover;
+	}
+}

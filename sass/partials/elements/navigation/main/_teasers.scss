@@ -1,0 +1,22 @@
+.nav-teaser-column {
+  display: block;
+  max-height: 103px;
+
+  #dwcontent-navigation-bottom {
+    width: 100%;
+    display: block;
+    text-align: justify;
+
+    .teaser {
+      display: inline-block;
+    }
+
+    &:after {
+      content: "";
+      width: 100%;
+      font-size: 0;
+      line-height: 0;
+      display: inline-block;
+    }
+  }
+}

@@ -1,0 +1,68 @@
+.recipe-of-the-month-container {
+	position: relative;
+	padding-bottom: 7px;
+
+	img {
+		padding: 0;
+	}
+
+	.information {
+		top: 20px;
+		right: 0;
+		width: 214px;
+		height: 167px;
+		position: absolute;
+		padding: 19px 14px 1px 24px;
+		background: $recipe-of-the-month-top-backgroudn;
+
+		h3 {
+			padding-bottom: 5px;
+			color: $recipe-of-the-month-top-heading-title;
+			font-size: $recipe-of-the-month-top-heading-title-size;
+			line-height: $recipe-of-the-month-top-heading-line-height;
+		}
+
+		h4 {
+			margin-bottom: 2px;
+			padding-bottom: 3px;
+			text-transform: uppercase;
+			color: $recipe-of-the-month-top-heading-month;
+			font-size: $recipe-of-the-month-top-heading-month-size;
+			border-bottom: 1px solid $recipe-of-the-month-top-backgroudn;
+
+			a:hover {
+				color: $recipe-of-the-month-top-link;
+				border-bottom: 1px solid $recipe-of-the-month-top-link;
+			}
+		}
+
+		.details {
+			color: $recipe-of-the-month-top-details;
+			font-size: $recipe-of-the-month-top-details-size;
+			line-height: $recipe-of-the-month-top-details-line-height;
+
+			@include useFontDin();
+
+			.value {
+				color: $recipe-of-the-month-top-details-value;
+				line-height: $recipe-of-the-month-top-details-line-height;
+			}
+		}
+
+		.read {
+			margin-top: 19px;
+			padding-bottom: 3px;
+			display: inline-block;
+			text-decoration: none;
+			color: $recipe-of-the-month-top-link;
+			font-size: $recipe-of-the-month-top-link-size;
+			border-bottom: 1px solid $recipe-of-the-month-top-backgroudn;
+
+			@include useFontDin();
+
+			&:hover {
+				border-bottom: 1px solid $recipe-of-the-month-top-link;
+			}
+		}
+	}
+}

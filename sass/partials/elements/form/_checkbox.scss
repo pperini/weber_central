@@ -1,0 +1,27 @@
+.checkbox {
+	$checkboxUncheckedImage: "src/checkbox.png";
+	$checkboxCheckedImage: "src/checkbox_checked.png";
+
+	left: 0;
+	top: -3px;
+	display: block;
+	cursor: pointer;
+	position: absolute;
+	width: image-width($checkboxUncheckedImage);
+	height: image-height($checkboxUncheckedImage);
+
+	&.checked {
+		background: transparent inline-image($checkboxCheckedImage) no-repeat 0 0;
+	}
+
+	&.unchecked {
+		background: transparent inline-image($checkboxUncheckedImage) no-repeat 0 0;
+	}
+
+	input {
+		width: 0px;
+		height: 0px;
+		overflow: hidden;
+		@include opacity(0);
+	}
+}

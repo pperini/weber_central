@@ -1,0 +1,53 @@
+$headingMargin: 17px;
+$elementPadding: 37px;
+
+a {
+	color: $footer-text;
+	text-decoration: none;
+
+	&:hover {
+		color: $footer-text-hover;
+	}
+}
+
+ul,
+ol,
+li {
+	padding: 0;
+	list-style: none;
+	background: transparent;
+	font-size: $footer-text-size;
+}
+
+h4 {
+	font-weight: normal;
+	color: $footer-heading;
+	text-transform: uppercase;
+	margin: 0 0 $headingMargin;
+	font-size: $footer-heading-size;
+
+	@include useFontDinBoldCondensed();
+}
+
+.centered {
+	padding: $elementPadding 0 0;
+}
+
+.heading {
+	height: 10px;
+	margin-top: 6px;
+	line-height: 10px;
+	position: relative;
+	margin-bottom: $headingMargin + 4px;
+	border-bottom: 1px solid $footer-heading-border;
+
+	h4 {
+		left: 0;
+		top: 1px;
+		margin: 0;
+		position: absolute;
+		padding: 0 15px 2px 0;
+		display: inline-block;
+		background: $footer-background;
+	}
+}

@@ -1,0 +1,210 @@
+@import "compass";
+
+$use-web-font: true !default;
+$use-google-font: false !default;
+
+@import "colors";
+@import "sizing";
+@import "grid";
+@import "fonts";
+
+// Sprites
+@import "flag/*.png";
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	-ms-touch-action: auto;
+	font-family: $font-arial;
+	background: $layout-background;
+}
+
+::selection {
+	color: $selection-color;
+	background: $selection-background;
+}
+
+::-moz-selection {
+	color: $selection-color;
+	background: $selection-background;
+}
+
+img {
+	border: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+$footerHeight: 766px;
+
+.hidden,
+#user-token,
+#routing-information,
+#website-information {
+	display: none;
+}
+
+.loading-overlay {
+	background: transparent inline-image("src/loading.gif") no-repeat 50% 50%;
+}
+
+#main-container {
+	width: 100%;
+	min-height: 100%;
+	position: relative;
+	overflow-x: hidden;
+
+	#main-content {
+		margin: 0 auto;
+		position: relative;
+		padding: 120px 0 80px;
+
+		&.is-fullwidth-page {
+			padding-bottom: 0;
+		}
+
+		#content {
+			padding: 50px 0;
+			background: $content-background;
+
+			.content-grid {
+				padding-bottom: 42px;
+			}
+
+			.full-width {
+				margin-top: -25px;
+			}
+
+			&.weber-tv {
+				padding: 25px 0 76px;
+			}
+
+			&.forum {
+				padding-bottom: 34px;
+			}
+		}
+
+		@import "elements/layout/header";
+
+		@import "elements/navigation/main";
+		@import "elements/navigation/sidebar";
+		@import "elements/navigation/breadcrumb";
+
+		@import "elements/home/visual";
+		@import "elements/home/teaser";
+
+		@import "elements/content/teaser";
+		@import "elements/content/intro";
+		@import "elements/content/foldout";
+		@import "elements/content/glossary";
+		@import "elements/content/downloads";
+		@import "elements/content/landing-page";
+		@import "elements/content/slider";
+		@import "elements/content/teaser-grid";
+		@import "elements/content/paging";
+		@import "elements/content/quickfilter";
+		@import "elements/content/recipe-overview";
+		@import "elements/content/recipe-search-layer";
+		@import "elements/content/recipe-of-the-month";
+		@import "elements/content/recipe-detail";
+		@import "elements/content/product-detail";
+		@import "elements/content/comments";
+		@import "elements/content/forum";
+		@import "elements/content/forum-detail";
+		@import "elements/content/weber-tv";
+		@import "elements/content/back-link";
+		@import "elements/content/community";
+		@import "elements/content/community-profile";
+		@import "elements/content/community-messages";
+		@import "elements/content/community-recipes";
+		@import "elements/content/concept";
+		@import "elements/content/grill-course";
+		@import "elements/content/dealer-search";
+		@import "elements/content/dealer-search-result";
+		@import "elements/content/online-dealer-search";
+		@import "elements/content/cooking-time";
+		@import "elements/content/perfect-tool-comparison";
+		@import "elements/content/perfect-tool-finder";
+		@import "elements/content/career-locationmap";
+		@import "elements/content/career-contactperson";
+		@import "elements/content/adwords";
+		@import "elements/content/download-link";
+		@import "elements/content/livecourses";
+	}
+
+	@import "elements/meta/footer";
+	@import "elements/meta/header";
+}
+
+@import "elements/form/form";
+@import "elements/form/input";
+@import "elements/form/select";
+@import "elements/form/button";
+@import "elements/form/checkbox";
+@import "elements/form/radio";
+@import "elements/form/textarea";
+@import "elements/form/form-items";
+
+@import "elements/headings";
+@import "elements/lightbox";
+@import "elements/content/lightbox-teaser";
+@import "elements/content/dealer-lightbox";
+@import "elements/rating";
+@import "elements/ribbons";
+@import "elements/elements";
+@import "elements/tables";
+@import "elements/happy-easter";
+@import "elements/language-select";
+@import "elements/tooltip";
+
+#footer-container {
+	$footerTopPadding: 7px;
+	$footerBottomPadding: 40px;
+
+	width: 100%;
+	position: relative;
+	color: $footer-text;
+	font-size: $footer-text-size;
+	background: $footer-background;
+	padding-top: $footerTopPadding;
+	padding-bottom: $footerBottomPadding;
+	line-height: $footer-text-line-height;
+
+	@import "elements/layout/footer";
+}
+
+.lft {
+	float: left;
+}
+
+.rgt {
+	float: right;
+}
+
+.centered {
+	margin: 0 auto;
+}
+
+.clear {
+	width: 0;
+	height: 0;
+	clear: both;
+	border: none;
+	outline: none;
+	display: block;
+	font-size: 0px;
+	overflow: hidden;
+	line-height: 0px;
+	background: transparent;
+}

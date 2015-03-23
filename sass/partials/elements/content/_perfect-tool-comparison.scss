@@ -1,0 +1,52 @@
+.perfect-tool-comparison-back {
+	margin-bottom: 9px;
+}
+
+.perfect-tool-comparison-colors {
+	margin-bottom: 26px;
+}
+
+.perfect-tool-comparison-division {
+	height: 20px;
+	border-top: 1px solid $perfect-tool-comparison-border;
+}
+
+.perfect-tool-comparison-heading-division {
+	height: 10px;
+	margin-top: 7px;
+	border-top: 1px solid $perfect-tool-comparison-border;
+}
+
+.perfect-tool-comparison-ribbons {
+	.ribbon {
+		&.large {
+			float: left;
+			margin-right: 10px;
+		}
+	}
+}
+
+.perfect-tool-comparison-data {
+	margin-bottom: 45px;
+}
+
+.perfect-tool-comparison-related.recipe {
+	margin-bottom: 25px;
+
+	.heading {
+		height: 38px;
+	}
+
+	.related-slider-item {
+		margin-left: 64px;
+		margin-right: 64px;
+	}
+
+	.related-slider-viewport {
+		width: 300px;
+	}
+}
+
+.perfect-tool-comparison-social {
+	margin-bottom: 26px;
+}

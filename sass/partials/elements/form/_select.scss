@@ -1,0 +1,263 @@
+.select-background {
+	background: transparent inline-image("src/select.png") no-repeat 0 0;
+}
+
+.error .select-background {
+	background-image: inline-image("src/select_error.png");
+}
+
+.select {
+	$spacing: 30px;
+	$selectWidth: 228px;
+	$selectHeight: 25px;
+	$optionHeight: 22px;
+	$optionPadding: 11px;
+	$optionScrubberWidth: 10px;
+	$optionListWidth: $selectWidth;
+	$optionListHeightScrolling: 341px;
+
+	z-index: 40;
+	display: block;
+	cursor: pointer;
+	position: relative;
+	color: $form-select;
+	height: $selectHeight;
+	margin: 0 $spacing 15px;
+	background-repeat: repeat-x;
+	font-size: $form-select-size;
+	width: $selectWidth - ($spacing * 2);
+	background-position: 0 ($selectHeight * 2) * -1;
+
+	@include useFontDin();
+
+	.left,
+	.text,
+	.right {
+		top: 0;
+		width: 30px;
+		z-index: 50;
+		display: block;
+		position: absolute;
+		height: $selectHeight;
+	}
+
+	.left {
+		left: $spacing * -1;
+		background-position: 0 0;
+	}
+
+	.right {
+		right: $spacing * -1;
+		background-position: 0 $selectHeight * -1;
+	}
+
+	.text {
+		z-index: 60;
+		text-indent: 10px;
+		width: $selectWidth;
+		left: $spacing * -1;
+		height: $selectHeight;
+		line-height: $selectHeight;
+	}
+
+	&.sub-grid {
+		$selectWidthSubGrid: 189px;
+
+		width: $selectWidthSubGrid - ($spacing * 2);
+
+		.text {
+			width: $selectWidthSubGrid;
+		}
+
+		.option-container {
+			width: $selectWidthSubGrid - 2;
+
+			.option,
+			.no-option {
+				width: $selectWidthSubGrid - $optionPadding;
+			}
+		}
+	}
+
+	&.double {
+		$selectWidthDouble: 480px;
+
+		width: $selectWidthDouble - ($spacing * 2);
+
+		.text {
+			width: $selectWidthDouble;
+		}
+
+		.option-container {
+			width: $selectWidthDouble - 2;
+
+			.option,
+			.no-option {
+				width: $selectWidthDouble - $optionPadding;
+			}
+		}
+	}
+
+	&.tiny {
+		$selectWidthTiny: 102px;
+
+		width: $selectWidthTiny - ($spacing * 2);
+
+		.text {
+			width: $selectWidthTiny;
+		}
+
+		.option-container {
+			width: $selectWidthTiny - 2;
+
+			.option,
+			.no-option {
+				width: $selectWidthTiny - $optionPadding;
+			}
+		}
+	}
+
+	&.half {
+		$selectWidthHalf: 165px;
+
+		width: $selectWidthHalf - ($spacing * 2);
+
+		.text {
+			width: $selectWidthHalf;
+		}
+
+		.option-container {
+			width: $selectWidthHalf - 2;
+
+			.option,
+			.no-option {
+				width: $selectWidthHalf - $optionPadding;
+			}
+		}
+	}
+
+	&.select-columns-8 {
+		$selectWidthColumns8: 354px;
+
+		width: $selectWidthColumns8 - ($spacing * 2);
+
+		.text {
+			width: $selectWidthColumns8;
+		}
+
+		.option-container {
+			width: $selectWidthColumns8 - 2;
+
+			.option,
+			.no-option {
+				width: $selectWidthColumns8 - $optionPadding;
+			}
+		}
+	}
+
+	select {
+		display: none;
+	}
+
+	.option-scrubber,
+	.option-scrubber-handle {
+		width: 10px;
+		z-index: 60;
+		display: block;
+		position: absolute;
+		background: transparent inline-image("src/select_scrubber.png") no-repeat 0 0;
+	}
+
+	.option-scrubber {
+		top: 5px;
+		right: 2px;
+		position: absolute;
+		width: $optionScrubberWidth;
+		height: $optionListHeightScrolling - 16;
+	}
+
+	.option-scrubber-handle {
+		left: 0;
+		height: 114px;
+		background-position: $optionScrubberWidth * -1 0;
+	}
+
+	.option-container {
+		z-index: 60;
+		position: absolute;
+		left: $spacing * -1;
+		top: $selectHeight - 1;
+		width: $optionListWidth;
+		@include border-radius(2px);
+		font-size: $form-select-size;
+		background: $form-select-dropdown-background;
+		border: 1px solid $form-select-dropdown-border;
+
+		.option-scrubber {
+			display: none;
+		}
+
+		&.scrolling {
+			overflow: hidden;
+			height: $optionListHeightScrolling;
+
+			.option-scrubber {
+				display: block;
+			}
+
+			.option-list {
+				left: 0;
+				position: absolute;
+			}
+
+			.option,
+			.no-option {
+				padding-right: 0;
+			}
+		}
+
+		.option,
+		.no-option {
+			text-indent: 5px;
+			height: $optionHeight;
+			line-height: $optionHeight;
+			padding-right: $optionPadding;
+			color: $form-select-dropdown-option;
+			width: $selectWidth - $optionPadding;
+		}
+
+		.no-option {
+			padding-top: 7px;
+		}
+
+		.option {
+			background: transparent;
+
+			&:hover {
+				color: $form-select-dropdown-option-hover;
+				background: $form-select-dropdown-option-hover-background;
+			}
+		}
+
+		.reset-selection {
+			display: block;
+			margin-top: 9px;
+			padding-top: 6px;
+			padding-left: 10px;
+			padding-bottom: 6px;
+			text-decoration: none;
+			color: $recipe-search-layer-all-link;
+			font-size: $recipe-search-layer-all-link-size;
+			border-top: 1px solid $recipe-search-layer-border;
+
+			span {
+				padding-bottom: 2px;
+				border-bottom: 1px solid transparent;
+			}
+
+			&:hover span {
+				border-bottom: 1px solid $recipe-search-layer-all-link;
+			}
+		}
+	}
+}

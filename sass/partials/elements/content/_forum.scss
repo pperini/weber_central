@@ -1,0 +1,150 @@
+table.forum-categories {
+	.posts,
+	.threads {
+		padding-left: 0;
+		text-align: center;
+		color: $forum-category-list-text;
+		line-height: $forum-category-list-text-line-height;
+	}
+
+	td.posts,
+	td.threads {
+		padding-top: 9px;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	.categories {
+		width: 414px;
+	}
+
+	.posts {
+		width: 85px;
+	}
+
+	.threads {
+		width: 81px;
+		padding-left: 40px;
+	}
+
+	h2 {
+		display: block;
+		padding-top: 4px;
+		padding-bottom: 3px;
+		color: $forum-category-list-heading;
+		font-size: $forum-category-list-heading-size;
+
+		@include useFontDinBoldCondensed();
+
+		a {
+			display: block;
+			color: $forum-category-list-heading;
+
+			&:hover {
+				color: $forum-category-list-heading-hover;
+			}
+		}
+	}
+
+	.title {
+		color: $forum-category-list-description;
+		font-size: $forum-category-list-description-size;
+	}
+
+	.date {
+		color: $forum-category-list-info;
+		font-size: $forum-category-list-info-size;
+	}
+
+	.date,
+	.title {
+		display: block;
+		line-height: $forum-category-list-description-line-height;
+	}
+}
+
+.forum-threads {
+	margin-bottom: 25px;
+
+	.threads {
+		width: 346px;
+	}
+
+	.comments {
+		width: 98px;
+		padding-left: 0;
+		padding-right: 0;
+		text-align: center;
+	}
+
+	.latest {
+		width: 166px;
+
+		.date {
+			display: block;
+			padding-bottom: 3px;
+			color: $forum-thread-list-info;
+			font-size: $forum-thread-list-info-size;
+
+			.time {
+				padding-left: 5px;
+			}
+		}
+
+		.username {
+			padding-bottom: 2px;
+			text-decoration: none;
+			color: $forum-thread-list-username;
+			border-bottom: 1px solid transparent;
+
+			&:hover {
+				border-bottom: 1px solid $forum-thread-list-username;
+			}
+		}
+	}
+
+	td.latest,
+	td.comments {
+		padding-top: 13px;
+	}
+
+	h2 {
+		display: block;
+		padding-top: 4px;
+		padding-bottom: 1px;
+		text-transform: none;
+		color: $forum-thread-list-heading;
+		font-size: $forum-thread-list-heading-size;
+		line-height: $forum-thread-list-heading-line-height;
+
+		@include useFontDin();
+
+		a {
+			display: block;
+			color: $forum-thread-list-heading;
+
+			&:hover {
+				color: $forum-thread-list-heading-hover;
+			}
+		}
+	}
+
+	.info {
+		display: block;
+		padding-bottom: 3px;
+		text-decoration: none;
+		color: $forum-thread-list-description;
+		font-size: $forum-thread-list-description-size;
+		line-height: $forum-thread-list-description-line-height;
+	}
+}
+
+.forum-actions {
+	padding-bottom: 10px;
+
+	.form-button {
+		margin-left: 24px;
+	}
+}

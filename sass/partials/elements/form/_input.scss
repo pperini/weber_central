@@ -1,0 +1,49 @@
+input {
+	width: 214px;
+	height: 15px;
+	padding: 4px 6px;
+	color: $form-field;
+	display: inline-block;
+	font-family: $font-arial;
+	font-size: $form-field-size;
+	background: $form-field-background;
+	border: 1px solid $form-field-border;
+
+	&.double {
+		width: 466px;
+	}
+
+	&.column-2 {
+		width: 88px;
+	}
+
+	&.column-3 {
+		width: 151px;
+	}
+
+	&.column-5 {
+		width: 267px;
+	}
+
+	&.file,
+	&[type="file"] {
+		// TODO: Input stylen (durch textfeld + button ersetzen)
+		height: 22px;
+	}
+
+	&.recipe-search {
+		height: 16px;
+		padding: 6px;
+	}
+
+	&:focus,
+	&:hover,
+	&:active {
+		border: 1px solid $form-field-border-active;
+	}
+
+	.error & {
+		padding: 3px 5px;
+		border: 2px solid $form-field-border-error;
+	}
+}

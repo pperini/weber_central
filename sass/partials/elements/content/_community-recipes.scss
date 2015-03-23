@@ -1,0 +1,112 @@
+.community-recipe-list {
+	margin-bottom: 25px;
+	border-bottom: 1px solid $community-recipe-collection-border;
+
+	&.my-recipes {
+		margin-bottom: 47px;
+	}
+
+	.community-recipe-item {
+		padding-top: 16px;
+		position: relative;
+		border-top: 1px solid $community-recipe-collection-item-border;
+
+		&.first {
+			border-top: 1px solid $community-recipe-collection-border;
+		}
+
+		img {
+			padding: 0;
+		}
+
+		.image {
+			width: 126px;
+			height: 94px;
+			position: relative;
+			padding-bottom: 15px;
+
+			.ribbons {
+				left: 0;
+				top: 76px;
+				width: 100%;
+				position: absolute;
+			}
+		}
+
+		.info {
+			width: 400px;
+			padding-left: 23px;
+
+			h4 {
+				top: -3px;
+				position: relative;
+				padding-bottom: 1px;
+				text-transform: uppercase;
+				font-size: $community-recipe-collection-title-size;
+			}
+
+			.comments {
+				color: $community-recipe-collection-comments;
+				font-size: $community-recipe-collection-comments-size;
+			}
+
+			.information {
+				padding-bottom: 5px;
+				font-size: $community-recipe-collection-text-size;
+				line-height: $community-recipe-collection-text-line-height;
+			}
+
+			.rating {
+				margin-bottom: 5px;
+			}
+
+			.information {
+				color: $community-recipe-collection-text;
+
+				.value {
+					color: $community-recipe-collection-text-value;
+				}
+			}
+		}
+
+		.actions {
+			width: 173px;
+			text-align: right;
+			padding-right: 10px;
+			font-size: $community-recipe-collection-action-size;
+			line-height: $community-recipe-collection-action-line-height;
+
+			.item-checkbox {
+				padding-bottom: 14px;
+			}
+
+			a {
+				display: inline-block;
+				border-bottom: 1px solid transparent;
+				color: $community-recipe-collection-action;
+
+				&:hover {
+					border-bottom: 1px solid $community-recipe-collection-action;
+				}
+			}
+		}
+
+		.status {
+			left: 526px;
+			bottom: 9px;
+			position: absolute;
+			color: $community-recipe-collection-status;
+			font-size: $community-recipe-collection-status-size;
+		}
+	}
+}
+
+.community-recipe-actions {
+	.form-button {
+		margin-bottom: 4px;
+	}
+
+	&.bottom {
+		padding-bottom: 23px;
+	}
+}

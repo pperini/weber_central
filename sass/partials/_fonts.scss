@@ -1,0 +1,81 @@
+$font-arial: Arial, Helvetica, sans-serif;
+$font-din: "DIN Next W02 Regular", $font-arial;
+$font-din-light: "DIN Next W02 Light", $font-arial;
+$font-din-medium: "DIN Next W02 Medium", $font-arial;
+$font-din-condensed: "DIN Next W02 Cond", $font-arial;
+$font-din-bold-condensed: "DIN Next W02 Bold Cond", $font-arial;
+$font-din-light-condensed: "DIN Next W02 Light Cond", $font-arial;
+
+@if $use-web-font == false {
+	$font-din: $font-arial;
+	$font-din-light: $font-arial;
+	$font-din-medium: $font-arial;
+	$font-din-condensed: $font-arial;
+	$font-din-bold-condensed: $font-arial;
+	$font-din-light-condensed: $font-arial;
+}
+
+@if $use-google-font == false {
+	@import url("http://fast.fonts.com/cssapi/a37cb77d-7c35-43e3-b614-13d1171b7c80.css");
+}
+
+@if $use-google-font == true {
+	@import url("http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&subset=latin,cyrillic-ext,latin-ext,cyrillic");
+
+	$googleFontName: "Open Sans Condensed";
+
+	$font-din: $font-arial;
+	$font-din-light: $font-arial;
+	$font-din-medium: $font-arial;
+	$font-din-condensed: $googleFontName, $font-arial;
+	$font-din-bold-condensed: $googleFontName, $font-arial;
+	$font-din-light-condensed: $googleFontName, $font-arial;
+}
+
+@mixin useFontDin() {
+	font-family: $font-din;
+
+	@if $use-google-font == true {
+		font-weight: 300;
+	}
+}
+
+@mixin useFontDinLight() {
+	font-family: $font-din-light;
+
+	@if $use-google-font == true {
+		font-weight: 300;
+	}
+}
+
+@mixin useFontDinMedium() {
+	font-family: $font-din-medium;
+
+	@if $use-google-font == true {
+		font-weight: bold;
+	}
+}
+
+@mixin useFontDinCondensed() {
+	font-family: $font-din-condensed;
+
+	@if $use-google-font == true {
+		font-weight: 300;
+	}
+}
+
+@mixin useFontDinBoldCondensed() {
+	font-family: $font-din-bold-condensed;
+
+	@if $use-google-font == true {
+		font-weight: 700;
+	}
+}
+
+@mixin useFontDinLightCondensed() {
+	font-family: $font-din-light-condensed;
+
+	@if $use-google-font == true {
+		font-weight: 300;
+	}
+}

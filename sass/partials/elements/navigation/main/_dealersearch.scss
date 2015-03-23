@@ -1,0 +1,55 @@
+.shop .content,
+.dealer-search .content {
+  background-position: 0 -650px;
+}
+
+.shop .drop-down {
+  left: -67px; // -188px rechtsbündig zum button
+}
+
+
+.dealer-search .drop-down {
+  left: -140px;
+}
+
+.shop .drop-down,
+.dealer-search .drop-down {
+  h3 {
+    border-bottom: 1px solid $main-navigation-layer-dealer-search-border;
+  }
+
+  a {
+    color: $main-navigation-layer-dealer-search-link;
+    font-size: $main-navigation-layer-dealer-serach-link-size;
+
+    &:hover {
+      color: $main-navigation-layer-dealer-search-link-hover;
+      background: $main-navigation-layer-dealer-search-link-hover-background;
+    }
+  }
+
+  .noindent {
+    text-indent: 0px;
+  }
+
+  .main-navigation-dealer-flags {
+    li {
+      height: 60px;
+      display: block;
+
+      a {
+        width: 100%;
+        height: 100%;
+        display: block;
+        overflow: hidden;
+        text-indent: -9999px;
+        background: transparent no-repeat 0 0;
+        font-size: $main-navigation-layer-dealer-serach-link-size;
+
+        &:hover {
+          background: transparent no-repeat 0 0;
+        }
+      }
+    }
+  }
+}

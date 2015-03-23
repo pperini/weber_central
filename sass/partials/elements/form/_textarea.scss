@@ -1,0 +1,23 @@
+textarea {
+	width: 419px;
+	height: 137px;
+	display: block;
+	resize: vertical;
+	color: $form-field;
+	padding: 13px 10px;
+	margin-bottom: 15px;
+	font-family: $font-arial;
+	font-size: $form-field-size;
+	background: $form-field-background;
+	border: 1px solid $form-field-border;
+	line-height: $from-textarea-line-height;
+
+	&.error {
+		padding: 12px 9px;
+		border: 2px solid $form-field-border-error;
+	}
+}
+
+.columns-8.form-item textarea {
+	width: 458px;
+}

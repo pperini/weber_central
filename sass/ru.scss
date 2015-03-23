@@ -1,0 +1,66 @@
+@import "compass";
+
+$language: "ru";
+
+@import "button-icon/*.png";
+@import "ribbon-small-ru/*.png";
+@import "ribbon-large-ru/*.png";
+
+$button-icon-sprite-dimensions: true;
+$ribbon-small-ru-sprite-dimensions: true;
+$ribbon-large-ru-sprite-dimensions: true;
+
+@include all-button-icon-sprites();
+@include all-ribbon-small-ru-sprites();
+@include all-ribbon-large-ru-sprites();
+
+#logo {
+	$logoImage: "src-#{$language}/logo.png";
+
+	width: image-width($logoImage);
+	height: image-height($logoImage);
+	background: transparent inline-image($logoImage) no-repeat 0 0;
+}
+
+.icon {
+	&.overlay-icon-recipe-of-the-month {
+		$overlayImage: "src-#{$language}/recipe-of-the-month.png";
+
+		width: image-width($overlayImage);
+		height: image-height($overlayImage);
+		background-image: inline-image($overlayImage);
+	}
+
+	&.overlay-icon-new {
+		$overlayImage: "src-#{$language}/new.png";
+
+		width: image-width($overlayImage);
+		height: image-height($overlayImage);
+		background-image: inline-image($overlayImage);
+	}
+}
+
+#main-container #main-content #main-navigation li.main a.main {
+	padding: 0 10px;
+}
+
+#main-container {
+	#main-content {
+		.product-detail {
+			.display {
+				.zoom {
+					$zoomIconImage: "src-#{$language}/zoom.png";
+					$zoomIconWidth: image-width($zoomIconImage);
+					$zoomIconHeight: 19px;
+					width: $zoomIconWidth;
+
+					background: transparent inline-image($zoomIconImage) no-repeat 0 0;
+
+					&.zoomed {
+						background-position: 0 $zoomIconHeight * -1;
+					}
+				}
+			}
+		}
+	}
+}

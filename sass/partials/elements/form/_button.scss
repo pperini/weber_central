@@ -1,0 +1,200 @@
+.button-background,
+.product-dealer-search,
+.product-dealer-search .layer {
+	background: transparent inline-image("src/button.gif") no-repeat 0 0;
+}
+
+.button-action {
+	margin-left: $grid-gutter-width;
+}
+
+.form-button {
+	$buttonHeight: 30px;
+	$buttonSpacing: 14px;
+
+	z-index: 40;
+	color: $button;
+	display: block;
+	cursor: pointer;
+	position: relative;
+	height: $buttonHeight;
+	text-decoration: none;
+	font-size: $button-size;
+	text-transform: uppercase;
+	line-height: $buttonHeight;
+	background-repeat: repeat-x;
+	margin: 0 $buttonSpacing 15px;
+
+	@include useFontDinMedium();
+
+	&.small {
+		$buttonSmallHeight: 25px;
+
+		height: $buttonSmallHeight;
+		line-height: $buttonSmallHeight;
+
+		.left,
+		.right {
+			height: $buttonSmallHeight;
+		}
+	}
+	
+	&.text-center {
+		text-align: center;
+	}
+	
+	&.not-uppercase {
+		text-transform: none;
+	}
+
+	&.search-rgt-icon {
+		$buttonHeight: 30px;
+		$buttonSpacingSearch: 7px;
+
+		margin: 0 $buttonSpacingSearch 10px;
+
+		.left,
+		.right {
+			width: $buttonSpacingSearch;
+			height: $buttonHeight;
+		}
+
+		&.small {
+			$buttonSmallHeight: 25px;
+
+			.left,
+			.right {
+				height: $buttonSmallHeight;
+			}
+		}
+
+		.left {
+			left: $buttonSpacingSearch * -1;
+		}
+
+		.right {
+			right: $buttonSpacingSearch * -1;
+		}
+	}
+
+	.icon {
+		z-index: 51;
+		padding-top: 1px;
+		overflow: visible;
+		padding-left: 22px;
+		white-space: nowrap;
+
+		&.search {
+			padding-left: 2px;
+			padding-right: 38px;
+			background: transparent inline-image("src/search_icon.png") no-repeat right center;
+		}
+
+		&.large {
+			position: relative;
+			padding-left: 30px;
+
+			.button-icon {
+				top: -2px;
+				left: -2px;
+				position: absolute;
+			}
+		}
+	}
+
+	.left,
+	.text,
+	.right {
+		top: 0;
+		z-index: 50;
+		display: block;
+		position: absolute;
+		width: $buttonSpacing;
+		height: $buttonHeight;
+	}
+
+	.left {
+		background-position: 0 0;
+		left: $buttonSpacing * -1;
+	}
+
+	.right {
+		background-position: 0 0;
+		right: $buttonSpacing * -1;
+	}
+
+	$layer-indicator-image-up: "src/button_pulldown_arrow_up.gif";
+	$layer-indicator-image-down: "src/button_pulldown_arrow_down.gif";
+
+	$layer-indicator-image-width: image-width($layer-indicator-image-up);
+	$layer-indicator-image-height: image-height($layer-indicator-image-up);
+
+	.layer-indicator {
+		right: 0;
+		display: block;
+		position: absolute;
+		width: $layer-indicator-image-width;
+		height: $layer-indicator-image-height;
+		top: ($buttonHeight / 2) - ($layer-indicator-image-height / 2);
+		background: transparent inline-image($layer-indicator-image-down) no-repeat 0 0;
+	}
+
+	.layer {
+		width: 100%;
+		z-index: 53;
+		display: none;
+		cursor: default;
+		line-height: 26px;
+		top: $buttonHeight;
+		position: absolute;
+		left: $buttonSpacing * -1;
+		padding: 10px $buttonSpacing 20px;
+		background: $button-layer-background;
+
+		a {
+			height: 16px;
+			cursor: pointer;
+			padding-top: 5px;
+			margin-bottom: 0;
+			line-height: 16px;
+			padding-bottom: 2px;
+			text-transform: none;
+			display: inline-block;
+			text-decoration: none;
+			border-bottom: 1px solid transparent;
+			color: $product-info-sidebar-dealer-button;
+			font-size: $product-info-sidebar-dealer-button-size;
+
+			@include useFontDin();
+
+			&:hover {
+				border-bottom: 1px solid $product-info-sidebar-dealer-button;
+			}
+		}
+	}
+
+	&.red,
+	&:hover {
+		z-index: 50;
+		color: $button-hover;
+		background-position: 0 $buttonHeight * -1;
+
+		.left {
+			background-position: 0 $buttonHeight * -1;
+		}
+
+		.right {
+			background-position: 0 $buttonHeight * -1;
+		}
+	}
+
+	&:hover {
+		.layer {
+			display: block;
+		}
+
+		.layer-indicator {
+			background-image: inline-image($layer-indicator-image-up);
+		}
+	}
+}

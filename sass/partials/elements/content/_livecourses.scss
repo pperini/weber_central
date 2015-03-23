@@ -1,0 +1,187 @@
+.livecourses-form-container {
+	.form-heading {
+		margin: 15px 0;
+		font-size: 14px;
+		text-transform: uppercase;
+		@include useFontDinMedium;
+	}
+
+	.search-form-column-first {
+		margin-left: 0;
+	}
+
+	::-webkit-input-placeholder {
+		color: $dealer-search-name;
+	}
+
+	:-moz-placeholder {
+		color: $dealer-search-name;
+	}
+
+	::-moz-placeholder {
+		color: $dealer-search-name;
+	}
+
+	:-ms-input-placeholder {
+		color: $dealer-search-name;
+	}
+
+	.space {
+		margin-bottom: 16px;
+	}
+}
+
+.nothing-found {
+	font-size: 14px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+
+	@include useFontDinMedium;
+}
+
+.form-item-group {
+	label {
+		padding-top: 5px;
+		text-align: right;
+		padding-right: 10px;
+		@include useFontDinMedium;
+	}
+}
+
+.livecourses-search-form {
+	border-bottom: 1px solid $dark-grey;
+
+	&.active-search {
+		border-bottom: none;
+	}
+
+}
+
+.livecourses-map {
+	margin-bottom: 25px;
+	display: none;
+
+	&.active-map {
+		display: block;
+	}
+}
+
+.livecourses-resultlist {
+	display: none;
+
+	&.active-results {
+		display: block;
+	}
+	.legend {
+		.legend-item {
+			padding-top: 15px;
+			padding-bottom: 5px;
+			@include useFontDinMedium;
+
+			&.distance {
+				text-align: right;
+			}
+		}
+	}
+	.dealerentry {
+		margin-top: 40px;
+
+		.dealer {
+			font-size: 13px;
+			padding-bottom: 10px;
+
+			.name {
+				font-weight: bold;
+				margin-bottom: 5px;
+				text-transform: uppercase;
+			}
+		}
+
+		.dealer-distance {
+			font-size: 14px;
+			text-align: right;
+		}
+	}
+}
+.course-entry {
+	margin-bottom: 15px;
+
+	.course-date {
+		font-size: 13px;
+		font-weight: bold;
+	}
+
+	.course-description {
+		width: 340px;
+		margin-left: 12px;
+
+		.course-title {
+			font-size: 13px;
+			margin-bottom: 5px;
+			text-transform: uppercase;
+		}
+
+		.coursedescription {
+			font-size: 13px;
+			line-height: 22px;
+			color: $content-download-info;
+		}
+
+		.course-more {
+			color: $red;
+			font-size: 13px;
+			@include useFontDin;
+		}
+	}
+}
+
+.dealer-infos {
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+	a {
+		color: $red;
+		font-size: 13px;
+		@include useFontDin;
+	}
+}
+
+.livecourses-map-info-window {
+	width: 285px;
+	height: 150px;
+	padding: 2px 0 0;
+	position: relative;
+
+	p {
+		width: 210px;
+		padding: 10px;
+	}
+}
+
+.livecourses-dealer-infos {
+	bottom: 0;
+	width: 100%;
+	padding: 15px 0;
+	position: absolute;
+	border-top: 1px solid #c5c5be;
+
+	.livecourses {
+		float: left;
+		font-size: 14px;
+		margin-left: 10px;
+	}
+
+	.dealer-more {
+		color: $red;
+		float: right;
+		font-size: 14px;
+		margin-right: 10px;
+	}
+}
+
+.weber-overlay.livecourses {
+	& > img {
+		z-index: 1;
+	}
+}

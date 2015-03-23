@@ -1,0 +1,39 @@
+.grill-course-list {
+	.grill-course-item {
+		.label {
+			color: $grill-course-label;
+			font-size: $grill-course-list-label-size;
+			line-height: $grill-course-list-label-line-height;
+
+			@include useFontDinMedium();
+		}
+
+		.value {
+			font-family: $font-arial;
+			color: $grill-course-value;
+			font-size: $grill-course-list-value-size;
+			line-height: $grill-course-list-value-line-height;
+		}
+
+		.label,
+		.value,
+		.information {
+			padding-bottom: 10px;
+		}
+
+		p {
+			padding-bottom: 0;
+		}
+	}
+
+	.grill-course-months {
+		padding-bottom: 16px;
+
+		ul,
+		li {
+			margin-left: 0;
+			padding-left: 0;
+			background: transparent;
+		}
+	}
+}

@@ -1,0 +1,23 @@
+.download-link {
+	font-size: 13px;
+	margin-bottom: 7px;
+	padding-left: image-width('src/product-download-icon.gif') + 10px;
+	background: inline-image('src/product-download-icon.gif') left center no-repeat;
+
+	a {
+		color: $content-download;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	.download-information {
+		font-size: 11px;
+		color: $content-download-info;
+
+		.extension {
+			text-transform: uppercase;
+		}
+	}
+}

@@ -1,0 +1,13 @@
+.recipe-overview {
+	position: relative;
+	margin-bottom: 0px;
+
+	p {
+		margin: 0 12px;
+		color: $content-intro-color;
+		font-size: $content-intro-size;
+		line-height: $content-intro-line-height;
+
+		@include useFontDinLight();
+	}
+}

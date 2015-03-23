@@ -1,0 +1,67 @@
+.paging {
+	$pagingCenterPadding: 16px;
+	$pagingIconWidth: image-width("src/paging_left.png");;
+	$pagingIconHeight: image-height("src/paging_left.png");;
+
+	$pagingPageWidth: 18px;
+	$pagingPageHeight: $pagingIconHeight;
+
+	text-align: center;
+	height: $pagingPageHeight;
+	line-height: $pagingPageHeight;
+
+	.prev,
+	.next {
+		overflow: hidden;
+		text-indent: -9999px;
+		display: inline-block;
+		width: $pagingIconWidth;
+		height: $pagingIconHeight;
+	}
+
+	.prev {
+		background: $paging-icon-background inline-image("src/paging_left.png") no-repeat 0 0;
+	}
+
+	.next {
+		background: $paging-icon-background inline-image("src/paging_right.png") no-repeat 0 0;
+	}
+
+	.pages {
+		display: inline-block;
+		height: $pagingPageHeight;
+		line-height: $pagingPageHeight;
+		padding: 0 $pagingCenterPadding;
+
+		.page {
+			display: inline-block;
+			text-decoration: none;
+			color: $paging-inactive;
+			width: $pagingPageWidth;
+			font-size: $paging-size;
+			height: $pagingPageHeight;
+			line-height: $pagingPageHeight;
+
+			@include useFontDinMedium();
+
+			&.active {
+				color: $paging-active;
+			}
+
+			&:hover {
+				color: $paging-hover;
+			}
+		}
+	}
+}
+
+.recipe-paging {
+	margin-top: 40px;
+	position: relative;
+
+	.select {
+		top: 0;
+		right: 12px;
+		position: absolute;
+	}
+}

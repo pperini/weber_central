@@ -1,0 +1,83 @@
+.concept-panel-list {
+	position: relative;
+
+	a,
+	img {
+		padding: 0;
+		display: block;
+	}
+
+	.concept-navigation,
+	.concept-navigation a span {
+		background: transparent inline-image("src/concept_navigation.png") no-repeat 0 0;
+	}
+
+	.concept-navigation {
+		top: 35px;
+		right: 0;
+		width: 15px;
+		height: 109px;
+		padding-top: 11px;
+		padding-left: 9px;
+		position: absolute;
+		background-position: 0 0;
+		@include transition-property(top);
+		@include transition-duration(220ms);
+		@include transition-timing-function(linear);
+
+		a {
+			$conceptNavigationIconSize: 11px;
+
+			margin: 0 0 13px;
+			position: relative;
+			display: inline-block;
+			width: $conceptNavigationIconSize;
+			height: $conceptNavigationIconSize;
+			background: transparent inline-image("src/concept_navigation_index.png") no-repeat ($conceptNavigationIconSize * -1) 0;
+
+			&:hover,
+			&.active {
+				background-position: 0 0;
+			}
+
+			.text {
+				$conceptNavigationItemHeight: 29px;
+
+				top: -9px;
+				right: 32px;
+				padding: 0 10px;
+				position: absolute;
+				white-space: nowrap;
+				color: $concept-text;
+				display: inline-block;
+				text-transform: uppercase;
+				background-repeat: repeat-x;
+				font-size: $concept-text-size;
+				background-position: 0 -120px;
+				height: $conceptNavigationItemHeight;
+				line-height: $conceptNavigationItemHeight;
+
+				@include useFontDin();
+
+				.left,
+				.right {
+					top: 0;
+					width: 5px;
+					display: block;
+					position: absolute;
+					height: $conceptNavigationItemHeight;
+				}
+
+				.left {
+					left: -5px;
+					background-position: -26px ($conceptNavigationItemHeight * -1);
+				}
+
+				.right {
+					right: -5px;
+					background-position: -26px 0;
+				}
+			}
+		}
+	}
+}

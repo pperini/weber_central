@@ -1,0 +1,36 @@
+.comment-container {
+	margin-top: 18px;
+}
+
+.comment-list {
+	h4 {
+		margin-bottom: 3px;
+		padding-bottom: 7px;
+		border-bottom: 1px solid $recipe-comment-list-border;
+	}
+
+	.comment-item {
+		padding: 6px 0 9px;
+		border-bottom: 1px solid $recipe-comment-border;
+
+		.info {
+			width: 126px;
+			color: $recipe-comment-info;
+			font-size: $recipe-comment-info-size;
+			line-height: $recipe-comment-info-line-height;
+		}
+
+		.text {
+			width: 315px;
+			font-size: $recipe-comment-text-size;
+			line-height: $recipe-comment-text-line-height;
+		}
+
+		.username {
+			padding-bottom: 4px;
+			text-decoration: none;
+			color: $recipe-comment-username;
+			font-size: $recipe-comment-username-size;
+		}
+	}
+}

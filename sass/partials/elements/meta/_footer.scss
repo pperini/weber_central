@@ -1,0 +1,51 @@
+#footer-meta {
+	$metaFooterHeight: 20px;
+
+	left: 0;
+	top: -42px;
+	width: 100%;
+	position: relative;
+	color: $meta-footer-text;
+	height: $metaFooterHeight;
+	font-size: $meta-footer-size;
+	line-height: $metaFooterHeight;
+
+	a {
+		text-decoration: none;
+		color: $meta-footer-text;
+	}
+
+	ul,
+	ol {
+		list-style: none;
+
+		li {
+			padding-left: 0;
+			display: inline;
+			list-style: none;
+			padding-right: 20px;
+			background: transparent;
+			font-size: $meta-footer-size;
+
+			a {
+				padding-bottom: 2px;
+				display: inline-block;
+				height: $metaFooterHeight;
+				border-bottom: 1px solid transparent;
+
+				&:hover {
+					border-bottom: 1px solid $meta-footer-text;
+				}
+			}
+		}
+	}
+
+	.facebook {
+		margin-top: -1px;
+		padding-left: 30px;
+		display: inline-block;
+		height: $metaFooterHeight + 2;
+		line-height: $metaFooterHeight + 2;
+		background: transparent inline-image("src/footer_facebook.gif") no-repeat 0 0;
+	}
+}

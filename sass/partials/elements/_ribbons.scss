@@ -1,0 +1,12 @@
+.ribbon {
+	float: left;
+	font-size: 0;
+	display: block;
+	margin-right: 1px;
+	text-indent: -9999px;
+}
+
+.ribbon.large {
+	float: none;
+	margin-bottom: 10px;
+}

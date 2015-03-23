@@ -1,0 +1,33 @@
+.intro {
+	position: relative;
+	margin-bottom: 7px;
+
+	p {
+		padding-bottom: 14px;
+		color: $content-intro-color;
+		font-size: $content-intro-size;
+		line-height: $content-intro-line-height;
+
+		@include useFontDinLight();
+	}
+
+	.intro-heading {
+		padding-bottom: 28px;
+	}
+
+	.group-icon {
+		top: -47px;
+		right: -73px;
+		display: block;
+		position: absolute;
+	}
+
+	&.product-detail {
+		min-height: 91px;
+	}
+}
+
+.single-product-feature {
+	padding-top: 5px;
+	padding-bottom: 25px;
+}

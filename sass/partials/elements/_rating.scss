@@ -1,0 +1,14 @@
+.rating {
+	$singleRatingIconWidth: 18px;
+
+	width: 90px;
+	height: 15px;
+	display: block;
+	background: transparent inline-image("src/rating.png") no-repeat 0 0;
+
+	@for $i from 0 through 5 {
+		 &.rated-#{$i} {
+		    background-position: (-90px + ($i * $singleRatingIconWidth)) 0;
+		 }
+	}
+}

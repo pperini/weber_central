@@ -1,0 +1,31 @@
+// Grid
+$grid-columns: 16;
+$grid-column-width: 39px;
+$grid-gutter-width: 12px;
+
+@mixin calculateGrid($gridClass, $columnClass, $columns, $columnWidth, $gutterWidth, $extendedColumns: false) {
+	@for $i from 1 through $columns {
+		.#{$gridClass}-#{$i} {
+			width: ($columnWidth + ($gutterWidth * 2)) * $i;
+		}
+		.#{$columnClass}-#{$i} {
+			margin: 0 $gutterWidth;
+			width: ($columnWidth * $i) + (($gutterWidth * 2) * ($i - 1));
+		}
+
+		@if $extendedColumns == true {
+			.#{$columnClass}-extended-#{$i} {
+				width: ($columnWidth + ($gutterWidth * 2)) * $i;
+				margin: 0 ($gutterWidth + $columnWidth) 0 $gutterWidth;
+			}
+		}
+	}
+}
+
+@include calculateGrid("grid", "columns", $grid-columns, $grid-column-width, $grid-gutter-width, true);
+
+@include calculateGrid("nav-grid", "nav-columns", 4, 207px, 18px);
+
+@include calculateGrid("weber-tv-grid", "weber-tv-columns", 4, 189px, 25px);
+
+@include calculateGrid("language-select-grid", "language-select-columns", 6, 144px, 12px);

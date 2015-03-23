@@ -1,0 +1,22 @@
+.foldout-item {
+	border-top: 0;
+	.content {
+		.careerShare {
+			display: none;
+		}
+	}
+
+	ul {
+		list-style: disc;
+		margin-left: 20px;
+		overflow: visible;
+		padding-left: 20px;
+
+		li {
+			padding-left: 0;
+			list-style: disc;
+			overflow: visible;
+			background-image: none;
+		}
+	}
+}

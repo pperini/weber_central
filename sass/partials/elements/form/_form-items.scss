@@ -1,0 +1,154 @@
+.form-item {
+	position: relative;
+
+	label {
+		@include useFontDinMedium();
+	}
+
+	&.search {
+		input {
+			width: 315px;
+			margin-right: 10px;
+		}
+
+		&.small {
+			input {
+				width: 178px;
+				padding: 4px 6px;
+				border-right: none;
+			}
+		}
+	}
+
+	&.item-text {
+		padding-bottom: 13px;
+
+		&.space {
+			margin-bottom: 16px;
+		}
+	}
+
+	&.item-textarea {
+		&.space {
+			margin-bottom: 25px;
+		}
+	}
+
+	&.item-select {
+		.select {
+			margin-bottom: 13px;
+		}
+
+		&.space {
+			margin-bottom: 19px;
+		}
+
+		&.large-space {
+			margin-bottom: 33px;
+		}
+	}
+
+	&.item-checkbox {
+		padding-bottom: 7px;
+
+		label {
+			padding-left: 25px;
+			font-family: $font-arial;
+			color: $form-checkbox-label;
+			font-size: $form-checkbox-label-size;
+		}
+
+		&.error label {
+			color: $form-label-error;
+		}
+	}
+
+	&.item-radio {
+		padding-bottom: 7px;
+
+		label {
+			text-indent: 25px;
+			font-family: $font-arial;
+			color: $form-checkbox-label;
+			font-size: $form-checkbox-label-size;
+		}
+
+		&.error label {
+			color: $form-label-error;
+		}
+	}
+
+	&.item-label {
+		label {
+			height: 23px;
+			line-height: 23px;
+		}
+	}
+
+	&.item-checkbox-group {
+		&.space {
+			margin-bottom: 16px;
+		}
+		&.large-space {
+			margin-bottom: 19px;
+		}
+	}
+
+	&.item-radio-group {
+		&.space {
+			margin-bottom: 16px;
+		}
+		&.large-space {
+			margin-bottom: 19px;
+		}
+	}
+
+	&.item-copy {
+		padding-top: 2px;
+		padding-bottom: 5px;
+	}
+
+	&.money {
+		.form-item {
+			width: 102px;
+		}
+
+		.select {
+			width: 41px;
+
+			.text {
+				width: 76px;
+			}
+
+			.option-container {
+				width: 99px;
+
+				.option {
+					width: 89px;
+				}
+			}
+		}
+	}
+
+	.kaufdatum {
+		width: 12px;
+		float: left;
+		margin-right: 36px;
+
+		&.kaufdatum-year {
+			margin-right: 30px;
+		}
+
+		.option-container {
+			width: 70px;
+
+			.option {
+				width: 59px;
+			}
+		}
+
+		.text {
+			width: 72px;
+		}
+	}
+}

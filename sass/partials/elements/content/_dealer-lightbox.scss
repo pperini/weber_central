@@ -1,0 +1,84 @@
+.dealer-lightbox {
+	padding-top: 10px;
+	width: 735px;
+
+	h3 {
+		margin: 0;
+		padding: 0;
+		@include useFontDinMedium;
+	}
+	.address {
+		font-size: 19px;
+
+		@include useFontDin;
+	}
+
+	.dealer-lightbox-infos {
+		margin-top: 25px;
+		margin-bottom: 10px;
+		border-bottom: 1px solid #cfcfcf;
+
+		.phone {
+			float: left;
+			width: 285px;
+
+			p {
+				padding-bottom: 0;
+			}
+
+			.title {
+				font-weight: bold;
+			}
+		}
+		.social {
+			float: left;
+			width: 450px;
+
+			.print {
+				float: right;
+				width: 115px;
+				margin-right: 0;
+				text-align: center;
+			}
+			.facebook {
+				float: left;
+				width: 230px;
+				margin-left: 70px;
+				.icon {
+					padding-left: image-width("src/facebook_whitebg.png") + 25px;
+					background: inline-image("src/facebook_whitebg.png") 13px center no-repeat;
+				}
+			}
+		}
+	}
+
+	.livecourses {
+		.legend {
+			font-size: 14px;
+			margin-bottom: 40px;
+			padding-bottom: 10px;
+			border-bottom: 1px solid $dark-grey;
+
+			@include useFontDinMedium;
+			.date {
+				font-size: 14px;
+				font-weight: normal;
+			}
+		}
+
+		.date {
+			float: left;
+			width: 285px;
+			font-size: 13px;
+			font-weight: bold;
+		}
+		.description {
+			float: left;
+			width: 450px;
+
+			h4 {
+				text-transform: uppercase;
+			}
+		}
+	}
+}

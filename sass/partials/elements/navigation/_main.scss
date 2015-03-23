@@ -1,0 +1,114 @@
+$mainNavigationTop: 55px;
+$mainNavigationItemHeight: 45px;
+$mainNavigationDropDownHeight: 446px;
+$mainNavigationDropDownPadding: 30px;
+
+#main-navigation {
+	left: 243px;
+	width: 765px;
+	display: block;
+	list-style: none;
+	position: absolute;
+	top: $mainNavigationTop;
+	color: $main-navigation-link;
+	font-size: $main-navigation-size;
+
+	@include useFontDinCondensed();
+
+	a {
+		text-decoration: none;
+		color: $main-navigation-link;
+	}
+
+	li.main {
+		float: left;
+		display: block;
+		padding-left: 0;
+		list-style: none;
+		margin-left: 1px;
+		position: relative;
+		background: transparent;
+
+		a.main {
+			display: block;
+			padding: 0 18px;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			height: $mainNavigationItemHeight;
+			border-top: 2px solid transparent;
+			line-height: $mainNavigationItemHeight;
+			font-size: $main-navigation-layer-level-one-link-size;
+		}
+
+		&:hover a.main,
+		& a.main:hover,
+		&.active a.main {
+			border-top: 2px solid $main-navigation-border;
+			background: $main-navigation-active-background;
+		}
+
+		&.shop:hover a.main,
+		&.shop a.main:hover,
+		&.shop.active a.main,
+		&.dealer-search:hover a.main,
+		&.dealer-search a.main:hover,
+		&.dealer-search.active a.main {
+			background: $main-navigation-active-background;
+			border-top: 2px solid $main-navigation-special-border;
+		}
+
+		&.products .drop-down {
+			left: -232px;
+		}
+
+		&.grilling .drop-down {
+			left: -4px;
+		}
+
+		&.recipes .drop-down {
+			left: -24px;
+		}
+
+		&.service .drop-down {
+			left: 3px;
+		}
+
+		&.company .drop-down {
+			left: 1px;
+		}
+
+    &.shop,
+		&.dealer-search {
+			color: $main-navigation-special-link;
+
+			a.main {
+				color: $main-navigation-special-link;
+			}
+		}
+
+		&.dealer-search {
+			float: right;
+		}
+	}
+
+	.drop-down-background {
+		background: transparent inline-image("src/main_navigation_layer_background.png") no-repeat 0 0;
+	}
+
+	.drop-down {
+		$paddingTop: 14px;
+		$borderWidth: 9px;
+
+		left: 0;
+		z-index: 500;
+		position: absolute;
+		padding-top: $paddingTop;
+		top: $mainNavigationItemHeight;
+
+		@import "main/drop-down";
+	}
+
+  @import "main/dealersearch";
+
+  @import "main/teasers";
+}

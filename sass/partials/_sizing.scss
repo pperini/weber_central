@@ -1,0 +1,291 @@
+// Layout
+$layout-meta-default-font-size: 11px;
+
+// Meta header
+$meta-header-size: $layout-meta-default-font-size;
+
+// Meta footer
+$meta-footer-size: $layout-meta-default-font-size;
+
+// Footer
+$footer-text-size: 11px;
+$footer-heading-size: 16px;
+
+$footer-text-line-height: 22px;
+
+// Breadcrumb
+$breadcrumb-size: 10px;
+
+// Content
+$content-h1-size: 34px;
+$content-h2-size: 34px;
+$content-h3-size: 19px;
+$content-h4-size: 14px;
+$content-text-size: 13px;
+$content-intro-size: 19px;
+
+$content-h1-line-height: 28px;
+$content-text-line-height: 22px;
+$content-intro-line-height: 26px;
+
+$content-table-size: 12px;
+$content-table-heading-size: 14px;
+
+$content-glossary-link-size: 19px;
+
+$content-download-size: 13px;
+$content-download-info-size: 11px;
+
+$content-download-line-height: 22px;
+
+// Foldout teaser
+$foldout-heading-size: 16px;
+
+$foldout-heading-line-height: 26px;
+
+// Slider
+$slider-text-size: 14px;
+$slider-button-size: 14px;
+$slider-heading-size: 14px;
+
+$slider-text-line-height: 18px;
+$slider-heading-line-height: 18px;
+
+// Buttons
+$button-size: 14px;
+
+// Products
+$product-list-item-heading-size: 14px;
+$product-list-item-subline-size: 14px;
+
+$product-list-item-heading-line-height: 18px;
+$product-list-item-subline-line-height: 18px;
+
+$product-info-back-link-size: 10px;
+
+$product-info-sidebar-text-size: 12px;
+$product-info-sidebar-teaser-size: 14px;
+$product-info-sidebar-heading-size: 14px;
+$product-info-sidebar-slider-text-size: 14px;
+$product-info-sidebar-heading-link-size: 11px;
+$product-info-sidebar-dealer-button-size: 14px;
+$product-info-sidebar-prize-size: 28px;
+
+$product-info-sidebar-text-line-height: 22px;
+$product-info-sidebar-teaser-line-height: 18px;
+$product-info-sidebar-heading-line-height: 22px;
+$product-info-sidebar-slider-text-line-height: 18px;
+$product-info-sidebar-prize-line-height: 32px;
+
+// Recipe of the month
+$recipe-of-the-month-top-link-size: 14px;
+$recipe-of-the-month-top-details-size: 14px;
+$recipe-of-the-month-top-heading-title-size: 19px;
+$recipe-of-the-month-top-heading-month-size: 14px;
+
+$recipe-of-the-month-top-heading-line-height: 24px;
+$recipe-of-the-month-top-details-line-height: 18px;
+
+$recipe-info-sidebar-text-size: 12px;
+$recipe-info-sidebar-info-heading-size: 14px;
+
+$recipe-info-sidebar-rating-info-size: 12px;
+$recipe-info-sidebar-rating-save-size: 12px;
+$recipe-info-sidebar-rating-button-size: 14px;
+$recipe-info-sidebar-community-action-size: 12px;
+
+$recipe-info-sidebar-text-line-height: 18px;
+$recipe-info-sidebar-community-action-line-height: 24px;
+
+$recipe-comment-text-size: 13px;
+$recipe-comment-info-size: 11px;
+$recipe-comment-username-size: 12px;
+
+$recipe-comment-text-line-height: 22px;
+$recipe-comment-info-line-height: 18px;
+
+$recipe-search-layer-type-size: 11px;
+$recipe-search-layer-title-size: 14px;
+$recipe-search-layer-all-link-size: 11px;
+
+$recipe-search-layer-title-line-height: 16px;
+
+// Paging
+$paging-size: 14px;
+
+// Quickfilter
+$quickfilter-small-size: 14px;
+$quickfilter-large-size: 16px;
+$quickfilter-medium-size: 16px;
+
+$quickfilter-large-line-height: 20px;
+$quickfilter-medium-line-height: 20px;
+
+// Content teaser
+$content-teaser-default-font-size: 14px;
+
+$content-teaser-text-size: $content-teaser-default-font-size;
+$content-teaser-more-size: $content-teaser-default-font-size;
+$content-teaser-heading-size: $content-teaser-default-font-size;
+
+// Home teaser
+$home-teaser-heading-size: 16px;
+$home-teaser-listing-link-size: 14px;
+$home-teaser-listing-heading-size: 14px;
+
+$home-teaser-listing-heading-line-height: 22px;
+
+// Sidebar Teaser
+$sidebar-teaser-button-size: 14px;
+
+// Main navigation
+$main-navigation-size: 14px;
+
+@if $use-web-font == false {
+	$main-navigation-size: 12px;
+}
+
+// Main navigation layer
+$main-navigation-layer-link-size: 13px;
+$main-navigation-layer-teaser-size: 14px;
+$main-navigation-layer-heading-size: 14px;
+$main-navigation-layer-level-one-link-size: 16px;
+$main-navigation-layer-dealer-serach-link-size: 14px;
+
+// Sub navigation
+$sub-navigation-level-one-size: 14px;
+$sub-navigation-level-two-size: 12px;
+$sub-navigation-level-three-size: 11px;
+
+// Weber TV
+$weber-tv-title-size: 24px;
+$weber-tv-intro-size: 19px;
+$weber-tv-heading-size: 34px;
+$weber-tv-description-size: 13px;
+$weber-tv-teaser-info-size: 11px;
+$weber-tv-teaser-heading-size: 14px;
+
+$weber-tv-title-line-height: 24px;
+$weber-tv-description-line-height: 22px;
+$weber-tv-teaser-heading-line-height: 18px;
+
+// Concept
+$concept-text-size: 14px;
+
+// Forum
+$forum-thread-info-size: 11px;
+$forum-thread-text-size: 13px;
+$forum-thread-action-size: 13px;
+$forum-thread-heading-size: 14px;
+$forum-thread-username-size: 13px;
+$forum-thread-signature-size: 11px;
+
+$forum-thread-text-line-height: 22px;
+$forum-thread-info-line-height: 18px;
+$forum-thread-heading-line-height: 22px;
+$forum-thread-username-line-height: 18px;
+$forum-thread-signature-line-height: 16px;
+
+$forum-category-list-text-size: 12px;
+$forum-category-list-info-size: 12px;
+$forum-category-list-heading-size: 19px;
+$forum-category-list-description-size: 14px;
+
+$forum-category-list-text-line-height: 22px;
+$forum-category-list-heading-line-height: 22px;
+$forum-category-list-description-line-height: 22px;
+
+$forum-thread-list-info-size: 12px;
+$forum-thread-list-heading-size: 14px;
+$forum-thread-list-description-size: 12px;
+
+$forum-thread-list-heading-line-height: 18px;
+$forum-thread-list-description-line-height: 18px;
+
+// Forms
+$from-info-size: 11px;
+$form-label-size: 14px;
+$form-field-size: 13px;
+$form-select-size: 14px;
+$form-notice-size: 11px;
+$form-checkbox-label-size: 13px;
+$from-textarea-line-height: 22px;
+$form-fieldset-legend-size: 14px;
+
+$form-label-line-height: 14px;
+
+// Lightbox
+$light-box-message-size: 14px;
+
+// Community
+$community-intro-size: 14px;
+$community-tools-size: 12px;
+
+$community-tools-line-height: 24px;
+
+$community-feature-heading: 14px;
+
+$community-info-label-size: 14px;
+$community-info-value-size: 12px;
+$community-info-action-size: 12px;
+
+$community-info-line-height: 30px;
+
+$community-login-info-name-size: 10px;
+$community-login-info-action-size: 11px;
+
+$community-friends-info-size: 12px;
+$community-friends-name-size: 14px;
+$community-friends-action-size: 12px;
+
+$community-friends-info-line-height: 18px;
+
+$community-message-switch-size: 14px;
+
+$community-message-text-size: 12px;
+$community-message-date-size: 12px;
+$community-message-action-size: 12px;
+$community-message-subject-size: 14px;
+$community-message-username-size: 12px;
+$community-message-checkbox-size: 12px;
+
+$community-message-text-line-height: 18px;
+$community-message-action-line-height: 22px;
+
+$community-profile-sidebar-heading-size: 14px;
+$community-profile-sidebar-recipe-name-size: 14px;
+$community-profile-sidebar-recipe-info-size: 14px;
+
+$community-profile-sidebar-recipe-info-line-height: 18px;
+$community-profile-sidebar-recipe-name-line-height: 18px;
+
+$community-recipe-collection-text-size: 14px;
+$community-recipe-collection-title-size: 14px;
+$community-recipe-collection-status-size: 11px;
+$community-recipe-collection-action-size: 12px;
+$community-recipe-collection-comments-size: 11px;
+
+$community-recipe-collection-text-line-height: 20px;
+$community-recipe-collection-action-line-height: 20px;
+
+// Dealer search
+$dealer-search-name-size: 16px;
+$dealer-search-website-size: 14px;
+$dealer-search-result-list-heading-size: 14px;
+$dealer-search-result-item-heading-size: 13px;
+
+// Grill courses
+$grill-course-list-label-size: 13px;
+$grill-course-list-value-size: 13px;
+$grill-course-list-label-line-height: 22px;
+$grill-course-list-value-line-height: 22px;
+
+// Tooltips
+$tooltip-text-size: 14px;
+
+// Language select
+$language-select-name-size: 12px;
+$language-select-link-size: 12px;
+
+// Perfect tool finder
+$perfect-tool-finder-option-heading: 14px;

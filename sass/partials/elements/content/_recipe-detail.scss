@@ -1,0 +1,225 @@
+.content-grid.recipe-content-grid {
+	padding-top: 9px;
+}
+
+.recipe-description {
+	p {
+		white-space: pre-wrap;
+	}
+}
+
+.heading-division {
+	margin-top: -9px;
+    margin-bottom: 7px;
+	border-top: 2px solid $product-detail-head-background;
+}
+
+.recipe-category-container {
+	a {
+		text-decoration: none;
+		text-transform: uppercase;
+		color: $product-info-back-link;
+		font-size: $product-info-back-link-size;
+
+		&:hover {
+			color: $product-info-back-link-hover;
+		}
+	}
+}
+
+.recipe-image {
+	$recipeImageWidth: 228px;
+	$recipeImageHeight: 171px;
+	$recipeZoomImage: "src/recipe_zoom.png";
+
+	display: block;
+	cursor: pointer;
+	position: relative;
+	margin-bottom: 10px;
+	width: $recipeImageWidth;
+	height: $recipeImageHeight;
+
+	img {
+		top: 0;
+		left: 0;
+		padding: 0;
+		z-index: 200;
+		display: block;
+		position: absolute;
+	}
+
+	.zoom {
+		right: 0;
+		bottom: 0;
+		z-index: 201;
+		display: block;
+		overflow: hidden;
+		position: absolute;
+		text-indent: -9999px;
+		width: image-width($recipeZoomImage);
+		height: image-height($recipeZoomImage);
+		background: transparent inline-image($recipeZoomImage) no-repeat 0 0;
+	}
+
+	.icon {
+		top: 5px;
+		right: 4px;
+		z-index: 201;
+		display: block;
+		position: absolute;
+		background-position: 0 0;
+		background-repeat: no-repeat;
+		background-color: transparent;
+	}
+}
+
+.recipe-property-list {
+	padding-bottom: 45px;
+
+	.recipe-property-item {
+		padding-top: 1px;
+		margin-bottom: 5px;
+		padding-bottom: 5px;
+		color: $recipe-info-sidebar-text;
+		font-size: $recipe-info-sidebar-text-size;
+		line-height: $recipe-info-sidebar-text-line-height;
+		border-bottom: 1px solid $recipe-info-sidebar-property-border;
+
+		&.top {
+			position: relative;
+			border-bottom: 1px solid $recipe-info-sidebar-top-property-border;
+
+			.rating-container {
+				padding-top: 4px;
+				position: relative;
+				padding-bottom: 5px;
+			}
+
+			.rating {
+				top: 3px;
+				right: 40px;
+				position: absolute;
+			}
+		}
+
+		h4 {
+			padding-bottom: 1px;
+			color: $recipe-info-sidebar-heading;
+		}
+
+		.username {
+			text-decoration: none;
+			color: $recipe-info-sidebar-username;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+.recipe-rating,
+.recipe-rating .layer {
+	background: transparent inline-image("src/recipe_rating.png") no-repeat 0 0;
+}
+
+.recipe-rating {
+	$productDealerSearchButtonHeight: 30px;
+
+	display: block;
+	position: relative;
+	padding-left: 12px;
+	margin-bottom: 10px;
+	height: $productDealerSearchButtonHeight;
+
+	a {
+		text-decoration: none;
+		color: $recipe-info-sidebar-rating-button;
+		font-size: $recipe-info-sidebar-rating-button-size;
+	}
+
+
+	.text {
+		z-index: 202;
+		display: block;
+		color: #ffffff;
+		position: relative;
+		text-transform: uppercase;
+		height: $productDealerSearchButtonHeight;
+		line-height: $productDealerSearchButtonHeight;
+
+		@include useFontDinMedium();
+	}
+
+	&:hover .layer {
+		display: block;
+	}
+
+	.layer {
+		top: 0;
+		left: 0;
+		width: 218px;
+		height: 57px;
+		z-index: 201;
+		display: none;
+		padding-top: 37px;
+		position: absolute;
+		padding-left: 12px;
+		background-position: 0 $productDealerSearchButtonHeight * -1;
+
+		.info {
+			top: 37px;
+			left: 12px;
+			position: absolute;
+			color: $recipe-info-sidebar-rating-info;
+			font-size: $recipe-info-sidebar-rating-info-size;
+		}
+
+		.save {
+			top: 62px;
+			right: 13px;
+			position: absolute;
+			text-decoration: none;
+			color: $recipe-info-sidebar-rating-save;
+			font-size: $recipe-info-sidebar-rating-save-size;
+		}
+
+		.rating {
+			top: 60px;
+			left: 13px;
+			position: absolute;
+
+			.star {
+				width: 18px;
+				height: 15px;
+				display: block;
+				overflow: hidden;
+				text-indent: -9999px;
+			}
+		}
+	}
+}
+
+.product-social-button-list.recipe-button-list {
+	margin-bottom: 21px;
+}
+
+.recipe-community-tools {
+	padding-bottom: 41px;
+
+	.community-action {
+		padding-left: 25px;
+		text-decoration: none;
+		color: $recipe-info-sidebar-community-action;
+		font-size: $recipe-info-sidebar-community-action-size;
+		line-height: $recipe-info-sidebar-community-action-line-height;
+
+		&.create-recipe {
+			background: transparent inline-image("src/community_action_add.png") no-repeat 1px 0;
+		}
+
+		&.create-recipe-collection {
+			background: transparent inline-image("src/community_action_collect.png") no-repeat 1px 0;
+		}
+	}
+}

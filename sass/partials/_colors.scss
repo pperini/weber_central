@@ -1,0 +1,342 @@
+// Global colors
+$red: #e10019;
+$black: #000000;
+$white: #ffffff;
+$dark-grey: #10100f;
+
+// Layout
+$layout-background: #f2f1f0;
+
+// Selection
+$selection-color: $white;
+$selection-background: $red;
+
+// Meta header
+$meta-header-text: #9e9c99;
+$meta-header-text-hover: $white;
+$meta-header-background: $dark-grey;
+
+// Meta footer
+$meta-footer-text: $dark-grey;
+
+// Footer
+$footer-text: #6e6e6d;
+$footer-heading: #9e9c99;
+$footer-text-hover: $white;
+$footer-background: $dark-grey;
+$footer-heading-border: #403b36;
+
+// Breadcrumb
+$breadcrumb-hover: $red;
+$breadcrumb-arrow: #9e9c99;
+$breadcrumb-inactive: #6e6e6d;
+$breadcrumb-active: $dark-grey;
+
+// Content
+$content-h3: #30302f;
+$content-text: #403B36;
+$content-h1: $dark-grey;
+$content-h2: $dark-grey;
+$content-h4: $dark-grey;
+$content-text-link: $red;
+$content-background: $white;
+$content-intro-color: $black;
+$content-listing-border: #b7b7b7;
+$content-listing-heading: $dark-grey;
+
+$content-table-text: #403B36;
+$content-table-border: #9e9c99;
+$content-table-row-odd: #f8f8f7;
+$content-table-row-even: $white;
+$content-table-heading: $dark-grey;
+$content-table-row-border: #cfcdca;
+$content-table-heading-shadow: rgba(255, 255, 255, 0.5);
+
+$content-glossary-link: $red;
+$content-glossary-link-hover: $dark-grey;
+$content-glossary-link-active: $dark-grey;
+
+$content-download: $red;
+$content-download-info: #6e665d;
+
+// Foldout teaser
+$foldout-border: #b7b7b7;
+$foldout-heading: $dark-grey;
+
+// Slider
+$slider-button: $white;
+$slider-border: #11100f;
+$slider-heading: $dark-grey;
+$slider-heading-hover: $red;
+$slider-overlay-text: $dark-grey;
+$slider-scrubber-background: #11100f;
+$slider-scrubber-handle-background: $dark-grey;
+$slider-button-text-shadow: rgba(0, 0, 0, 0.75);
+
+// Buttons
+$button: $white;
+$button-hover: $white;
+$button-layer-background: #cd0000;
+
+// Products
+$product-list-border: $dark-grey;
+$product-list-item-border: #212120;
+$product-list-item-subline: #6e665d;
+$product-list-item-heading: $dark-grey;
+$product-list-item-heading-hover: $red;
+$product-list-item-subline-value: $dark-grey;
+
+$product-info-heading: #30302f;
+$product-info-back-link: #6e6e6d;
+$product-info-back-link-hover: $red;
+
+$product-info-sidebar-text: #403b36;
+$product-info-sidebar-heading: #0f0f0f;
+$product-info-sidebar-teaser: $dark-grey;
+$product-info-sidebar-heading-link: $red;
+$product-info-sidebar-dealer-button: $white;
+$product-info-sidebar-slider-text: $dark-grey;
+$product-info-sidebar-slider-text-hover: $red;
+$product-info-sidebar-slider-border: $dark-grey;
+
+$product-detail-head-background: #101716;
+
+// Recipe of the month
+$recipe-of-the-month-top-link: $red;
+$recipe-of-the-month-top-details: #6e6e6d;
+$recipe-of-the-month-top-backgroudn: $white;
+$recipe-of-the-month-top-heading-title: #30302f;
+$recipe-of-the-month-top-details-value: $dark-grey;
+$recipe-of-the-month-top-heading-month: $dark-grey;
+
+$recipe-info-sidebar-text: #403b36;
+$recipe-info-sidebar-username: $red;
+$recipe-info-sidebar-heading: #403b36;
+$recipe-info-sidebar-property-border: #cfcdca;
+$recipe-info-sidebar-top-property-border: #9e9c99;
+
+$recipe-info-sidebar-action: #6e6e6d;
+$recipe-info-sidebar-rating-save: $red;
+$recipe-info-sidebar-rating-info: #403b36;
+$recipe-info-sidebar-rating-button: $dark-grey;
+$recipe-info-sidebar-community-action: #6e6e6d;
+
+$recipe-comment-info: #6e665d;
+$recipe-comment-text: #403b36;
+$recipe-comment-username: $red;
+$recipe-comment-border: #cfcdca;
+$recipe-comment-heading: $dark-grey;
+$recipe-comment-list-border: #9e9c99;
+
+$recipe-search-layer-type: #6e665d;
+$recipe-search-layer-title: #11100f;
+$recipe-search-layer-border: #9e9c99;
+$recipe-search-layer-all-link: $red;
+$recipe-search-layer-background: $white;
+$recipe-search-layer-type-hover: $white;
+$recipe-search-layer-title-hover: $white;
+$recipe-search-layer-item-border: #cfcdca;
+$recipe-search-layer-hover-background: $red;
+$recipe-search-layer-shadow: rgba(58, 57, 58, 0.5);
+
+// Paging
+$paging-hover: $red;
+$paging-inactive: #6e6e6d;
+$paging-active: $dark-grey;
+$paging-icon-background: $dark-grey;
+
+// Quickfilter
+$quickfilter: $white;
+$quickfilter-hover: $white;
+
+// Content teaser
+$content-teaser-more: $red;
+$content-teaser-text: #6e665d;
+$content-teaser-heading: $dark-grey;
+$content-teaser-heading-hover: $red;
+
+// Home teaser
+$home-teaser-heading: $black;
+$home-teaser-listing-link: $red;
+$home-teaser-heading-border: #060505;
+$home-teaser-listing-heading: $black;
+$home-teaser-listing-heading-border: #0e0e0e;
+
+// Sidebar Teaser
+$sidebar-teaser-button: #fefefe;
+
+// Main navigation
+$main-navigation-border: #111110;
+$main-navigation-link: $dark-grey;
+$main-navigation-special-link: $red;
+$main-navigation-special-border: #da4444;
+$main-navigation-active-background: $white;
+
+// Main navigation layer
+$main-navigation-layer-link: #cfcdca;
+$main-navigation-layer-teaser: $white;
+$main-navigation-layer-heading: $white;
+$main-navigation-layer-link-hover: $white;
+$main-navigation-layer-heading-hover: $red;
+$main-navigation-layer-heading-border: #403b36;
+$main-navigation-layer-dealer-search-link: $white;
+$main-navigation-layer-dealer-search-border: #da4444;
+$main-navigation-layer-link-hover-background: #403b36;
+$main-navigation-layer-dealer-search-link-hover: $white;
+$main-navigation-layer-dealer-search-link-hover-background: #89010a;
+
+// Sub navigation
+$sub-navigation-hover: $red;
+$sub-navigation-inactive: #6e6e6d;
+$sub-navigation-border: $dark-grey;
+$sub-navigation-active: $dark-grey;
+
+// Weber TV
+$weber-tv-link: $red;
+$weber-tv-title: $white;
+$weber-tv-intro: $white;
+$weber-tv-heading: $white;
+$weber-tv-description: $white;
+$weber-tv-teaser-info: #9e9c99;
+$weber-tv-top-background: $black;
+$weber-tv-teaser-heading: $white;
+$weber-tv-bottom-background: $black;
+
+// Concept
+$concept-text: $white;
+
+// Forum
+$forum-thread-action: $red;
+$forum-thread-text: #403b36;
+$forum-thread-info: #6e665d;
+$forum-thread-username: $red;
+$forum-thread-signature: #6e665d;
+$forum-thread-heading: $dark-grey;
+$forum-thread-text-border: #cfcdca;
+$forum-thread-reply-border: #cfcdca;
+$forum-thread-comment-heading-border: #9e9c99;
+
+$forum-category-list-text: #403b36;
+$forum-category-list-info: #403b36;
+$forum-category-list-heading: #30302f;
+$forum-category-list-heading-hover: $red;
+$forum-category-list-description: #403b36;
+
+$forum-thread-list-info: #403b36;
+$forum-thread-list-username: $red;
+$forum-thread-list-heading: $dark-grey;
+$forum-thread-list-heading-hover: $red;
+$forum-thread-list-description: #403b36;
+
+// Dorms
+$from-info: $red;
+$form-error: $red;
+$from-notice: #6e665d;
+$form-border: #9e9c99;
+$form-label: $dark-grey;
+$form-field: $dark-grey;
+$form-label-error: $red;
+$form-select: $dark-grey;
+$form-placeholder: #9e9c99;
+$form-field-border: #9e9c99;
+$from-notice-border: #9e9c99;
+$form-checkbox-label: #403b36;
+$form-division-border: #cfcdca;
+$form-fieldset-border: #cfcdca;
+$form-field-border-error: $red;
+$form-field-background: #f8f8f7;
+$form-fieldset-legend: $dark-grey;
+$form-field-border-active: $dark-grey;
+$form-select-dropdown-border: #a4a29f;
+$form-select-dropdown-option: $dark-grey;
+$form-select-dropdown-background: $white;
+$form-select-dropdown-option-hover: $white;
+$form-select-dropdown-option-hover-background: $red;
+
+// Lightbox
+$light-box-title: $red;
+$light-box-message: $red;
+$light-box-separator: #cfcdca;
+$light-box-background: $white;
+
+// Community
+$community-intro: $black;
+$community-tools: #6e6e6d;
+$community-tools-hover: $red;
+
+$community-info-action: $red;
+$community-info-border: #98a09c;
+$community-info-row-border: #c7cfcb;
+
+$community-friends-action: $red;
+$community-friends-info: #403b36;
+$community-friends-border: #9e9c99;
+$community-friends-name: $dark-grey;
+$community-friends-name-hover: $red;
+$community-friends-item-border: #cfcdca;
+
+$community-message-action: $red;
+$community-message-text: #403b36;
+$community-message-date: #403b36;
+$community-message-border: #9e9c99;
+$community-message-username: #403b36;
+$community-message-subject: $dark-grey;
+$community-message-subject-hover: $red;
+$community-message-item-border: #cfcdca;
+
+$community-message-switch: $white;
+$community-message-switch-active: $white;
+
+$community-login-info-action: $red;
+$community-login-info-name: #6e6e6d;
+$community-login-info-border: #d4d2cf;
+$community-login-info-name-hover: $red;
+
+$community-profile-sidebar-recipe-border: #9e9c99;
+$community-profile-sidebar-recipe-name: $dark-grey;
+$community-profile-sidebar-recipe-info: $dark-grey;
+$community-profile-sidebar-recipe-info-value: #6e665d;
+$community-profile-sidebar-recipe-item-border: #cfcdca;
+$community-profile-sidebar-recipe-ribbon-border: #121212;
+
+$community-recipe-collection-action: $red;
+$community-recipe-collection-text: #6e665d;
+$community-recipe-collection-comments: $red;
+$community-recipe-collection-status: #6e665d;
+$community-recipe-collection-border: #9e9c99;
+$community-recipe-collection-title: $dark-grey;
+$community-recipe-collection-item-border: #cfcdca;
+$community-recipe-collection-text-value: $dark-grey;
+
+// Dealer search
+$dealer-search-action: $red;
+$dealer-search-name: $dark-grey;
+$dealer-search-website: #d20019;
+$dealer-search-name-hover: $red;
+$dealer-search-border: $dark-grey;
+$dealer-search-item-border: #cfcdca;
+$dealer-search-border-light: #b7b7b7;
+$dealer-search-result-list-text: $dark-grey;
+$dealer-search-result-item-border: $dark-grey;
+$dealer-search-result-list-heading: $dark-grey;
+$dealer-search-category-legend-background: $layout-background;
+
+// Grill courses
+$grill-course-label: #403B36;
+$grill-course-value: #403B36;
+
+// Tooltips
+$tooltip-text: $white;
+
+// Language select
+$language-select-name: #cfcdca;
+$language-select-link: #cfcdca;
+$language-select-heading: $white;
+$language-select-link-hover: $white;
+$language-select-background: #3a373a;
+
+// Perfect tool comparison
+$perfect-tool-comparison-border: $dark-grey;
+
+// Perfect tool finder
+$perfect-tool-finder-heading-border: $dark-grey;

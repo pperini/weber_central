@@ -1,0 +1,67 @@
+table {
+	width: 100%;
+	display: block;
+	text-align: left;
+	table-layout: fixed;
+	margin-bottom: 31px;
+	border-collapse: collapse;
+	color: $content-table-text;
+	border-bottom: 1px solid $content-table-border;
+
+	thead {
+		z-index: 50;
+		position: relative;
+
+		tr {
+			th {
+				margin: 0;
+				z-index: 50;
+				height: 31px;
+				text-align: left;
+				line-height: 31px;
+				position: relative;
+				font-weight: normal;
+				padding: 0 0 0 10px;
+				vertical-align: middle;
+				font-size: $content-table-heading-size;
+				border-bottom: 1px solid $content-table-border;
+
+				@include useFontDinMedium();
+			}
+		}
+	}
+
+	tbody {
+		z-index: 40;
+		margin-top: -1px;
+		font-size: $content-table-size;
+		background: $content-table-row-border;
+
+		tr {
+			padding: 1px 0 0;
+			background: $content-table-row-even;
+
+			&.odd {
+				background: $content-table-row-odd;
+			}
+
+			&:nth-child(odd) {
+				background: $content-table-row-odd;
+			}
+
+			&.even {
+				background: $content-table-row-even;
+			}
+
+			&:nth-child(even) {
+				background: $content-table-row-even;
+			}
+
+			td {
+				vertical-align: top;
+				padding: 7px 0 7px 10px;
+				border-top: 1px solid $content-table-row-border;
+			}
+		}
+	}
+}

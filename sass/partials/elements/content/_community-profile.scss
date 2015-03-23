@@ -1,0 +1,288 @@
+.login-information {
+	top: -24px;
+	width: 220px;
+	height: 54px;
+	right: -102px;
+	position: absolute;
+
+	.image,
+	.logout,
+	.username {
+		display: block;
+		position: absolute;
+	}
+
+	.logout,
+	.username {
+		right: 63px;
+	}
+
+	.username {
+		top: 23px;
+		text-transform: uppercase;
+		color: $community-login-info-name;
+		font-size: $community-login-info-name-size;
+
+		&:hover {
+			color: $community-login-info-name-hover;
+		}
+	}
+
+	.logout {
+		top: 41px;
+		text-decoration: none;
+		color: $community-login-info-action;
+		font-size: $community-login-info-action-size;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	.image {
+		top: 0;
+		right: 0;
+		width: 50px;
+		height: 50px;
+		padding: 1px;
+		border: 1px solid $community-login-info-border;
+	}
+}
+
+.community-friend-list {
+	margin-bottom: 25px;
+	border-bottom: 1px solid $community-friends-border;
+
+	h3 {
+		padding-bottom: 6px;
+	}
+
+	img {
+		padding: 0;
+	}
+
+	.image {
+		margin-right: 24px;
+	}
+
+	.community-friend-item {
+		padding-top: 15px;
+		padding-bottom: 11px;
+		border-top: 1px solid $community-friends-item-border;
+
+		&.first {
+			border-top: 1px solid $community-friends-border;
+		}
+	}
+
+	.username {
+		top: -3px;
+		display: block;
+		position: relative;
+		padding-bottom: 5px;
+		color: $community-friends-name;
+		font-size: $community-friends-name-size;
+
+		@include useFontDinMedium();
+
+		&:hover {
+			color: $community-friends-name-hover;
+		}
+	}
+
+	.summary {
+		display: block;
+		padding-bottom: 4px;
+		color: $community-friends-info;
+		font-size: $community-friends-info-size;
+		line-height: $community-friends-info-line-height;
+	}
+
+	.actions {
+		display: block;
+
+		a {
+			margin-right: 16px;
+			padding-bottom: 2px;
+			display: inline-block;
+			color: $community-friends-action;
+			border-bottom: 1px solid transparent;
+			font-size: $community-friends-action-size;
+
+			&:hover {
+				border-bottom: 1px solid $community-friends-action;
+			}
+		}
+	}
+}
+
+.community-profile-actions {
+	height: 67px;
+	position: relative;
+
+	&.my-profile {
+		height: 78px;
+	}
+
+	.community-profile-action-list {
+		padding-left: 214px;
+
+		a {
+			margin-right: 19px;
+			padding-bottom: 2px;
+			color: $community-info-action;
+			border-bottom: 1px solid transparent;
+			font-size: $community-info-action-size;
+
+			&:hover {
+				border-bottom: 1px solid $community-info-action;
+			}
+		}
+	}
+
+	.form-button {
+		width: 200px;
+	}
+}
+
+.community-profile-sidebar-heading {
+	padding-bottom: 8px;
+	text-transform: uppercase;
+	font-size: $community-profile-sidebar-heading-size;
+}
+
+.community-profile-action-list {
+	padding-bottom: 44px;
+
+	.community-action {
+		display: block;
+		padding-left: 24px;
+		text-decoration: none;
+		color: $community-tools;
+		font-size: $community-tools-size;
+		line-height: $community-tools-line-height;
+
+		&:hover {
+			color: $community-tools-hover;
+		}
+
+		&.action-my-recipes {
+			background: transparent inline-image("src/tool_pencil.png") no-repeat 0 4px;
+		}
+
+		&.action-recipe-collection {
+			background: transparent inline-image("src/tool_stack.png") no-repeat 0 4px;
+		}
+
+		&.action-create-recipe {
+			background: transparent inline-image("src/tool_plus.png") no-repeat 0 4px;
+		}
+
+		&.action-find-users {
+			background: transparent inline-image("src/tool_member.png") no-repeat 0 4px;
+		}
+
+		&.action-my-messages {
+			background: transparent inline-image("src/tool_message.png") no-repeat 0 4px;
+		}
+	}
+}
+
+.community-profile {
+	img {
+		padding: 0;
+	}
+}
+
+.community-profile-information {
+	$communityInfoRowWidth: 518px;
+
+	margin-bottom: 9px;
+	width: $communityInfoRowWidth;
+	border-bottom: 1px solid $community-info-border;
+
+	&.my-profile {
+		margin-bottom: 25px;
+	}
+
+	.row {
+		margin-top: -1px;
+		width: $communityInfoRowWidth;
+		line-height: $community-info-line-height;
+		border-top: 1px solid $community-info-row-border;
+
+		&.first {
+			border-top: 1px solid $community-info-border;
+		}
+
+		.label {
+			width: 154px;
+			padding-left: 10px;
+			font-size: $community-info-label-size;
+
+			@include useFontDinMedium();
+		}
+
+		.value {
+			width: 354px;
+			font-size: $community-info-value-size;
+		}
+	}
+}
+
+.community-sidebar-recipe-list {
+	margin-bottom: 50px;
+	border-bottom: 1px solid $community-profile-sidebar-recipe-border;
+
+	h4 {
+		padding-bottom: 11px;
+	}
+
+	img {
+		padding-bottom: 6px;
+	}
+
+	.community-sidebar-recipe-item {
+		padding-top: 15px;
+		position: relative;
+		padding-bottom: 14px;
+		border-top: 1px solid $community-profile-sidebar-recipe-item-border;
+
+		&.first {
+			border-top: 1px solid $community-profile-sidebar-recipe-border;
+		}
+
+		h4 {
+			padding-bottom: 4px;
+			text-transform: uppercase;
+			color: $community-profile-sidebar-recipe-name;
+			font-size: $community-profile-sidebar-recipe-name-size;
+			line-height: $community-profile-sidebar-recipe-name-line-height;
+
+			a {
+				color: $community-profile-sidebar-recipe-name;
+			}
+		}
+
+		.ribbons {
+			left: 0;
+			top: 168px;
+			width: 100%;
+			position: absolute;
+			border-bottom: 1px solid $community-profile-sidebar-recipe-ribbon-border;
+		}
+
+		.information {
+			padding-bottom: 5px;
+			color: $community-profile-sidebar-recipe-info;
+			font-size: $community-profile-sidebar-recipe-info-size;
+			line-height: $community-profile-sidebar-recipe-info-line-height;
+
+			@include useFontDin();
+
+			.value {
+				color: $community-profile-sidebar-recipe-info-value;
+			}
+		}
+	}
+}

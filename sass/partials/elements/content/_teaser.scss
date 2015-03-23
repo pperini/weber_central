@@ -1,0 +1,33 @@
+.teaser {
+	$buttonHeight: 26px;
+
+	width: 228px;
+	height: 106px;
+	text-indent: 0;
+	display: block;
+	margin-bottom: 25px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: $sidebar-teaser-button;
+	font-size: $sidebar-teaser-button-size;
+
+	@include useFontDin();
+
+	img {
+		padding: 0;
+		display: block;
+	}
+
+	.button {
+		width: 100%;
+		display: block;
+		text-indent: 7px;
+		height: $buttonHeight;
+		line-height: $buttonHeight;
+		background: transparent inline-image("src/teaser_copy_background.gif") no-repeat 0 0;
+	}
+
+	&:hover .button {
+		background-position: 0 $buttonHeight * -1;
+	}
+}

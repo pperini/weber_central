@@ -1,0 +1,48 @@
+.dealer-search-result-list {
+	.heading {
+		color: $dealer-search-result-list-heading;
+		font-size: $dealer-search-result-list-heading-size;
+
+		@include useFontDin();
+
+		.dealer-search-border {
+			padding-top: 8px;
+		}
+	}
+
+	.dealer-distance {
+		text-align: right;
+	}
+}
+
+.dealer-search-result-item {
+	padding-top: 10px;
+
+	.dealer-features {
+		padding-top: 7px;
+	}
+
+	h5 {
+		font-weight: bold;
+		padding-bottom: 9px;
+		font-size: $dealer-search-result-item-heading-size;
+	}
+
+	p {
+		padding-bottom: 0;
+		color: $dealer-search-result-list-text;
+	}
+
+	.dealer-search-border-middle {
+		margin-bottom: 4px;
+	}
+
+	.dealer-search-border-bottom {
+		padding-top: 5px;
+	}
+
+	.special-icon {
+		padding: 0;
+		margin: 0 10px 0 0;
+	}
+}

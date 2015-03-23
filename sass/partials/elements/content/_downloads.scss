@@ -1,0 +1,26 @@
+.download-list {
+	margin-top: -6px;
+	padding-bottom: 16px;
+	font-size: $content-download-size;
+	line-height: $content-download-line-height;
+
+	.download-item {
+		display: block;
+		padding-left: 20px;
+		text-decoration: none;
+		color: $content-download;
+		background: transparent inline-image("src/download.gif") no-repeat 0 4px;
+
+		.link {
+		}
+
+		&:hover .link {
+			border-bottom: 1px solid $content-download;
+		}
+
+		.info {
+			color: $content-download-info;
+			font-size: $content-download-info-size;
+		}
+	}
+}

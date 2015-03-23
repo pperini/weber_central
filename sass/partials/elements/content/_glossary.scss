@@ -1,0 +1,17 @@
+.glossary {
+	padding-bottom: 37px;
+	font-size: $content-glossary-link-size;
+
+	@include useFontDin();
+
+	a {
+		text-decoration: none;
+		color: $content-glossary-link;
+
+		&:hover,
+		&.active {
+			text-decoration: underline;
+			color: $content-glossary-link-active;
+		}
+	}
+}

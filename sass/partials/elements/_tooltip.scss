@@ -1,0 +1,48 @@
+.tooltip {
+	position: relative;
+}
+
+.tooltip-item {
+	$tooltipHeight: 30px;
+
+	z-index: 400;
+	display: block;
+	text-indent: 0;
+	min-width: 200px;
+	position: absolute;
+	color: $tooltip-text;
+	height: $tooltipHeight;
+	line-height: $tooltipHeight;
+	font-size: $tooltip-text-size;
+
+	@include useFontDin();
+
+	&,
+	.left,
+	.right {
+		background: transparent inline-image("src/product_tooltip.png") repeat-x 0 0;
+	}
+
+	.left,
+	.right {
+		top: 0;
+		width: 14px;
+		display: block;
+		position: absolute;
+		height: $tooltipHeight;
+	}
+
+	.left {
+		left: -14px;
+		background-position: 0 ($tooltipHeight * -1);
+	}
+
+	.right {
+		right: -14px;
+		background-position: 0 0;
+	}
+
+	& {
+		background-position: 0 ($tooltipHeight * -2);
+	}
+}

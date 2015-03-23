@@ -1,0 +1,33 @@
+.breadcrumb {
+	$breadcrumbHeight: 7px;
+
+	padding-bottom: 29px;
+	color: $breadcrumb-arrow;
+	height: $breadcrumbHeight;
+	text-transform: uppercase;
+	font-size: $breadcrumb-size;
+	line-height: $breadcrumbHeight;
+
+	a {
+		text-decoration: none;
+		color: $breadcrumb-inactive;
+
+		&.active {
+			color: $breadcrumb-active;
+		}
+
+		&:hover {
+			color: $breadcrumb-hover;
+		}
+	}
+}
+
+.full-width .breadcrumb {
+	padding-bottom: 15px;
+}
+
+#full-width-breadcrumb-container {
+	left: 0;
+	top: 146px;
+	position: absolute;
+}

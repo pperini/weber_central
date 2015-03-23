@@ -1,0 +1,60 @@
+.landing-page-visual {
+	padding-bottom: 32px;
+
+	img {
+		margin: 0;
+		padding: 0;
+	}
+}
+
+.landing-page-visual-small {
+	padding-top: 4px;
+	padding-bottom: 16px;
+}
+
+.landing-page-teaser {
+	height: 219px;
+	padding: 10px 0 0;
+	font-size: $content-teaser-text-size;
+	color: $content-teaser-text;
+
+	h3 {
+		padding-bottom: 9px;
+		color: $content-teaser-heading;
+		font-size: $content-teaser-heading-size;
+
+		@include useFontDinMedium();
+
+		a {
+			color: $content-teaser-heading;
+
+			&:hover {
+				color: $content-teaser-heading-hover;
+			}
+		}
+	}
+
+	p {
+		padding-bottom: 0;
+		color: $content-teaser-text;
+
+		@include useFontDin();
+	}
+
+	img {
+		padding-bottom: 11px;
+	}
+
+	.more {
+		padding-bottom: 1px;
+		text-decoration: none;
+		color: $content-teaser-more;
+		font-size: $content-teaser-more-size;
+
+		@include useFontDin();
+
+		&:hover {
+			border-bottom: 1px solid $content-teaser-more;
+		}
+	}
+}

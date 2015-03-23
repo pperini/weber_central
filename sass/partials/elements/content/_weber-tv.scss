@@ -1,0 +1,153 @@
+.weber-tv-intro {
+	padding: 39px 39px 0;
+	position: relative;
+	background: $weber-tv-top-background;
+
+	.introcontent {
+		width: 630px;
+
+		p {
+			color: $weber-tv-intro;
+			line-height: 26px;
+			padding-bottom: 14px;
+			font-size: $weber-tv-intro-size;
+
+			@include useFontDinLight();
+		}
+	}
+
+	.icon {
+		top: 38px;
+		right: 38px;
+		position: absolute;
+		width: image-width('src/weber-tv-icon.png');
+		height: image-height('src/weber-tv-icon.png');
+		background: inline-image('src/weber-tv-icon.png') no-repeat;
+	}
+
+	h1 {
+		padding-bottom: 37px;
+		color: $weber-tv-heading;
+		font-size: $weber-tv-heading-size;
+	}
+}
+
+.weber-tv-top {
+	padding: 0 39px 39px;
+	background: $weber-tv-top-background;
+
+	.video {
+		z-index: 10;
+		width: 630px;
+		position: relative;
+	}
+
+	.info {
+		width: 252px;
+	}
+
+	h2 {
+		padding-bottom: 20px;
+		color: $weber-tv-title;
+		font-size: $weber-tv-title-size;
+		line-height: $weber-tv-title-line-height;
+	}
+
+	p {
+		color: $weber-tv-description;
+		font-size: $weber-tv-description-size;
+		line-height: $weber-tv-description-line-height;
+	}
+
+	.share {
+		width: 228px;
+		padding-top: 7px;
+	}
+}
+
+.weber-tv-bottom {
+	margin-bottom: 25px;
+	padding: 50px 14px 0;
+	background: $weber-tv-bottom-background;
+
+	.select-container {
+		padding-left: 25px;
+		padding-bottom: 5px;
+	}
+}
+
+.video-teaser-list {
+	.video-teaser-item {
+		$videoTeaserInfoWidth: 189px;
+		$videoTeaserInfoHeight: 68px;
+
+		height: 174px;
+		display: block;
+		margin-top: 15px;
+		position: relative;
+		margin-bottom: 35px;
+		text-decoration: none;
+
+		img {
+			padding: 0;
+		}
+
+		.thumbnail {
+			width: 189px;
+			height: 106px;
+			display: block;
+			position: relative;
+
+			.image,
+			.overlay {
+				top: 0;
+				left: 0;
+				width: 189px;
+				height: 106px;
+				display: block;
+				position: absolute;
+			}
+
+			.image {
+				z-index: 60;
+			}
+
+			.overlay {
+				z-index: 61;
+				background: transparent inline-image("src/weber_tv_play_button.png") no-repeat 50% 50%;
+			}
+		}
+
+		.info {
+			left: 0;
+			bottom: 0;
+			display: block;
+			padding-top: 5px;
+			padding-left: 10px;
+			position: absolute;
+			width: $videoTeaserInfoWidth - 10px;
+			height: $videoTeaserInfoHeight - 5px;
+			background: transparent inline-image("src/weber_tv_teaser.png") no-repeat 0 0;
+
+			.title {
+				display: block;
+				padding-bottom: 3px;
+				color: $weber-tv-teaser-heading;
+				font-size: $weber-tv-teaser-heading-size;
+				line-height: $weber-tv-teaser-heading-line-height;
+
+				@include useFontDinMedium();
+			}
+
+			.length {
+				display: block;
+				color: $weber-tv-teaser-info;
+				font-size: $weber-tv-teaser-info-size;
+			}
+		}
+
+		&:hover .info {
+			background-position: 0 $videoTeaserInfoHeight * -1;
+		}
+	}
+}

@@ -1,0 +1,51 @@
+#main-container #main-content #main-navigation {
+	.dealer-search .drop-down {
+		.content {
+			padding-top: 20px;
+		}
+		.choose-country {
+			color: white;
+			margin-bottom: 20px;
+		}
+		.main-navigation-dealer-flags {
+			&.de-at-ch {
+				li {
+					height: 60px;
+					width: 69px;
+
+					a {
+						background-image: inline-image("src/dealer_language_flags_de_at_ch.png");
+
+						&:hover {
+							background-image: inline-image("src/dealer_language_flags_de_at_ch_hover.png");
+						}
+
+						&.active {
+							background-image: inline-image("src/dealer_language_flags_de_at_ch_active.png");
+						}
+					}
+
+					&.de {
+						a {
+							background-position: 0 0;
+						}
+					}
+
+					&.at {
+
+						a {
+							background-position: -69px 0;
+						}
+					}
+
+					&.ch {
+
+						a {
+							background-position: -138px 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}

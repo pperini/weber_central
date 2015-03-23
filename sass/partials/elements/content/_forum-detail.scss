@@ -1,0 +1,122 @@
+.forum-post-item {
+	padding-top: 15px;
+	padding-bottom: 21px;
+	border-top: 1px solid $forum-thread-reply-border;
+
+	&.top {
+		border: none;
+		padding-top: 0;
+		padding-bottom: 19px;
+	}
+
+	.post {
+		width: 465px;
+
+		.text {
+			h3 {
+				top: -5px;
+				display: block;
+				position: relative;
+				padding-bottom: 1px;
+				text-transform: none;
+				color: $forum-thread-heading;
+				font-size: $forum-thread-heading-size;
+				line-height: $forum-thread-heading-line-height;
+
+				@include useFontDinMedium();
+			}
+
+			p,
+			blockquote {
+				color: $forum-thread-text;
+				font-size: $forum-thread-text-size;
+				line-height: $forum-thread-text-line-height;
+			}
+
+			p {
+				padding-bottom: 13px;
+				white-space: pre-wrap;
+			}
+
+			blockquote {
+				top: -6px;
+				position: relative;
+				padding-left: 24px;
+				padding-bottom: 12px;
+			}
+		}
+
+		.signature {
+			padding-top: 6px;
+			padding-bottom: 11px;
+			color: $forum-thread-signature;
+			font-size: $forum-thread-signature-size;
+			line-height: $forum-thread-signature-line-height;
+			border-top: 1px solid $forum-thread-text-border;
+		}
+
+		.actions {
+			padding-top: 2px;
+
+			a {
+				margin-right: 13px;
+				padding-bottom: 2px;
+				display: inline-block;
+				text-decoration: none;
+				color: $forum-thread-action;
+				font-size: $forum-thread-action-size;
+				border-bottom: 1px solid transparent;
+
+				&:hover {
+					border-bottom: 1px solid $forum-thread-list-username;
+				}
+			}
+		}
+	}
+
+	.info {
+		width: 126px;
+		line-height: $forum-thread-info-line-height;
+
+		.image {
+			display: block;
+
+			img {
+				border: none;
+				padding: 0 0 7px;
+			}
+		}
+
+		.username {
+			margin-bottom: 3px;
+			padding-bottom: 2px;
+			display: inline-block;
+			text-decoration: none;
+			color: $forum-thread-username;
+			border-bottom: 1px solid transparent;
+			font-size: $forum-thread-username-size;
+
+			&:hover {
+				border-bottom: 1px solid $forum-thread-list-username;
+			}
+		}
+
+		.date {
+			color: $forum-thread-info;
+			font-size: $forum-thread-info-size;
+		}
+	}
+}
+
+.forum-post-list {
+	margin-bottom: 25px;
+	border-bottom: 1px solid $forum-thread-comment-heading-border;
+
+	h4 {
+		z-index: 201;
+		position: relative;
+		margin-bottom: -1px;
+		padding-bottom: 7px;
+		border-bottom: 1px solid $forum-thread-comment-heading-border;
+	}
+}

@@ -1,0 +1,158 @@
+ul {
+	$main-navigation-layer-link-line-height: 18px;
+
+	margin-top: 2px;
+	list-style: none;
+	padding: 0 0 5px;
+
+	li {
+		padding: 0 0 7px;
+		list-style: none;
+		background: transparent;
+
+		a {
+			$linkHeight: 18px;
+
+			height: $linkHeight;
+			line-height: $linkHeight;
+
+			&:hover {
+				color: $main-navigation-layer-link-hover;
+				background: $main-navigation-layer-link-hover-background;
+			}
+		}
+	}
+}
+
+a {
+	display: block;
+	color: $main-navigation-layer-link;
+}
+
+h3 {
+	display: block;
+	margin: 0 0 11px;
+	padding: 2px 0 4px;
+	position: relative;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: $main-navigation-layer-heading;
+	font-size: $main-navigation-layer-heading-size;
+	border-bottom: 1px solid $main-navigation-layer-heading-border;
+
+	@include useFontDin();
+
+	&.icon {
+		margin-right: 35px;
+
+		.icon {
+			top: 1px;
+			width: 29px;
+			right: -35px;
+			height: 29px;
+			display: block;
+			position: absolute;
+		}
+	}
+
+	a {
+		color: $main-navigation-layer-heading;
+
+		&:hover {
+			color: $main-navigation-layer-heading-hover;
+		}
+	}
+}
+
+.border-side {
+	top: 0;
+	width: 3px;
+	height: 100%;
+	z-index: 500;
+	position: absolute;
+
+	.corner {
+		width: 6px;
+		height: 6px;
+		bottom: -6px;
+		display: block;
+		position: absolute;
+	}
+
+	&.left {
+		left: -3px;
+		background-position: -94px -1306px;
+
+		.corner {
+			left: 0;
+			background-position: -41px -1306px;
+		}
+	}
+
+	&.right {
+		right: -3px;
+		background-position: -3px -1306px;
+
+		.corner {
+			right: 0;
+			background-position: -53px -1306px;
+		}
+	}
+}
+
+.border-bottom {
+	left: 3px;
+	width: 100%;
+	height: 6px;
+	z-index: 501;
+	bottom: -6px;
+	padding: 0 3px;
+	position: absolute;
+	background-repeat: repeat-x;
+	background-position: 0 -1300px;
+}
+
+.content {
+	z-index: 510;
+	display: block;
+	text-indent: 5px;
+	position: relative;
+	background-repeat: repeat-x;
+	color: $main-navigation-layer-link;
+	font-size: $main-navigation-layer-link-size;
+	padding: $mainNavigationDropDownPadding 6px 16px;
+
+	@include useFontDin();
+}
+
+.teaser {
+	width: 207px;
+	height: 103px;
+	text-indent: 0;
+	display: block;
+	margin-bottom: 15px;
+	color: $main-navigation-layer-teaser;
+
+	@include useFontDin();
+
+	img {
+		padding: 0;
+		display: block;
+	}
+
+	.button {
+		$buttonHeight: 30px;
+
+		width: 100%;
+		display: block;
+		text-indent: 7px;
+		height: $buttonHeight;
+		line-height: $buttonHeight;
+		background: transparent inline-image("src/main_navigation_teaser_button.png") no-repeat 0 0;
+	}
+
+	&:hover .button,
+	& .button:hover {
+		background-position: 0 -30px;
+	}
+}

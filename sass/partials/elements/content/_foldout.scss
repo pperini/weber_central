@@ -1,0 +1,114 @@
+$foldoutIndent: 20px;
+
+.foldout-list {
+	border-bottom: 1px solid $foldout-border;
+
+	h3 {
+		padding-top: 32px;
+	}
+}
+
+.foldout-item {
+	border-top: 1px solid $foldout-border;
+
+	.heading {
+		display: block;
+		color: $foldout-heading;
+		font-size: $foldout-heading-size;
+
+		@include useFontDin();
+
+		a {
+			display: block;
+			text-decoration: none;
+			color: $foldout-heading;
+			padding: 7px 0 3px $foldoutIndent;
+			line-height: $foldout-heading-line-height;
+			background: transparent inline-image("src/arrow_right.gif") no-repeat 3px 15px;
+		}
+	}
+
+	&.opened {
+		.heading a {
+			background: transparent inline-image("src/arrow_down.gif") no-repeat 2px 18px;
+		}
+
+		.content {
+			display: block;
+		}
+	}
+
+	.content {
+		display: none;
+
+		.text {
+			padding: 19px 0 13px;
+		}
+
+		.select .text {
+			padding: 0;
+		}
+
+		p {
+			padding: 0 0 0 $foldoutIndent;
+		}
+
+		&.contains-table {
+			.text {
+				padding: 0;
+			}
+
+			table {
+				margin: 0;
+				padding: 0;
+				border-bottom: 0;
+			}
+		}
+
+		.careerShare {
+			margin-top: 20px;
+			margin-bottom: 25px;
+			padding-left: 19px;
+			font-size: 11px;
+			line-height: 14px;
+
+			.print {
+				width: 128px;
+
+			}
+
+			a {
+				color: $red;
+			}
+			a:hover {
+				border-bottom: 1px solid #e10019;
+			}
+
+		}
+
+		.careerContact {
+			margin-top: 17px;
+			padding-left: 19px;
+			font-size: 11px;
+			line-height: 14px;
+
+			img.profile {
+				width: 126px;
+				margin-right: 20px;
+				float: left;
+				padding-bottom: 0px;
+			}
+
+			p.head {
+				padding-top: 4px;
+				font-weight: bold;
+			}
+
+			p.space {
+				margin-bottom: 16px;
+			}
+
+		}
+
+	}
+}

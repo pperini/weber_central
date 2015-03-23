@@ -1,0 +1,35 @@
+.contact-person {
+	font-size: 14px;
+	line-height: 20px;
+	margin-bottom: 30px;
+	border-bottom: solid 1px $product-list-item-border;
+
+	@include useFontDin();
+
+
+	.heading {
+		padding-bottom: 15px;
+
+		h4 {
+			text-transform: uppercase;
+			border-bottom: solid 1px $product-list-item-border;
+		}
+	}
+	img {
+		padding-bottom: 0;
+	}
+
+	.contact-person-name {
+		padding-bottom: 26px;
+		@include useFontDinMedium();
+	}
+
+	.contact-person-contactdetails {
+		padding-bottom: 25px;
+		color: $content-teaser-text;
+
+		a {
+			color: $content-teaser-more;
+		}
+	}
+}

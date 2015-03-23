@@ -1,0 +1,115 @@
+.recipe-search-container {
+	z-index: 400;
+	position: relative;
+}
+
+.recipe-search-result-list {
+	left: 0;
+	top: 29px;
+	position: absolute;
+	background: $recipe-search-layer-background;
+	border: 1px solid $recipe-search-layer-border;
+	@include box-shadow($recipe-search-layer-shadow 0 2px 2px);
+
+	&.large {
+		width: 327px;
+	}
+
+	&.small {
+		top: 23px;
+		width: 226px;
+	}
+
+	.show-all {
+		display: block;
+		padding-top: 9px;
+		padding-left: 10px;
+		padding-bottom: 9px;
+		text-decoration: none;
+		color: $recipe-search-layer-all-link;
+		font-size: $recipe-search-layer-all-link-size;
+
+		span {
+			padding-bottom: 2px;
+			border-bottom: 1px solid transparent;
+		}
+
+		&:hover span {
+			border-bottom: 1px solid $recipe-search-layer-all-link;
+		}
+	}
+}
+
+.recipe-search-button {
+	width: 74px;
+
+	.icon {
+		padding-right: 19px;
+	}
+}
+
+.recipe-search-button-small {
+	$recipeSearchButtonSmall: "src/recipe_search_small.png";
+
+	top: 0;
+	right: 0;
+	display: block;
+	overflow: hidden;
+	position: absolute;
+	text-indent: -9999px;
+	width: image-width($recipeSearchButtonSmall);
+	height: image-height($recipeSearchButtonSmall);
+	background: transparent inline-image($recipeSearchButtonSmall) no-repeat 0 0;
+}
+
+.recipe-search-result-item {
+	z-index: 401;
+	display: block;
+	min-height: 50px;
+	position: relative;
+	padding: 8px 0 0 69px;
+	text-decoration: none;
+	border-bottom: 1px solid $recipe-search-layer-item-border;
+
+	.image {
+		top: 8px;
+		left: 6px;
+		display: block;
+		padding-bottom: 0;
+		position: absolute;
+		padding-right: 9px;
+	}
+
+	.title {
+		top: -3px;
+		display: block;
+		position: relative;
+		text-transform: uppercase;
+		color: $recipe-search-layer-title;
+		font-size: $recipe-search-layer-title-size;
+		line-height: $recipe-search-layer-title-line-height;
+
+		@include useFontDinMedium();
+	}
+
+	.type {
+		top: -1px;
+		display: block;
+		position: relative;
+		padding-bottom: 4px;
+		color: $recipe-search-layer-type;
+		font-size: $recipe-search-layer-type-size;
+	}
+
+	&:hover {
+		background: $recipe-search-layer-hover-background;
+
+		.title {
+			color: $recipe-search-layer-title-hover;
+		}
+
+		.type {
+			color: $recipe-search-layer-type-hover;
+		}
+	}
+}

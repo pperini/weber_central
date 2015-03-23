@@ -1,0 +1,48 @@
+#head-meta {
+	$metaHeaderHeight: 24px;
+
+	top: 0;
+	left: 0;
+	width: 100%;
+	position: absolute;
+	color: $meta-header-text;
+	height: $metaHeaderHeight;
+	font-size: $meta-header-size;
+	line-height: $metaHeaderHeight;
+	background: $meta-header-background;
+
+	a {
+		margin: 0 16px 0 5px;
+		display: inline-block;
+		text-decoration: none;
+		color: $meta-header-text;
+		font-size: $meta-header-size;
+
+		&:hover {
+			color: $meta-header-text-hover;
+		}
+
+		&.my-community {
+			margin-right: 0;
+			padding-left: 20px;
+			background: transparent inline-image("src/header_community_icon.png") no-repeat 0 6px;
+		}
+	}
+
+	ul,
+	ol {
+		list-style: none;
+
+		li {
+			padding-left: 0;
+			display: inline;
+			list-style: none;
+			background: none;
+			font-size: $meta-header-size;
+		}
+	}
+
+	.centered {
+		text-align: right;
+	}
+}

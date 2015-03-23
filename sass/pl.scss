@@ -1,0 +1,45 @@
+@import "compass";
+
+$language: "pl";
+
+@import "button-icon/*.png";
+@import "ribbon-small-pl/*.png";
+@import "ribbon-large-pl/*.png";
+
+$button-icon-sprite-dimensions: true;
+$ribbon-small-pl-sprite-dimensions: true;
+$ribbon-large-pl-sprite-dimensions: true;
+
+@include all-button-icon-sprites();
+@include all-ribbon-small-pl-sprites();
+@include all-ribbon-large-pl-sprites();
+
+#logo {
+	$logoImage: "src-#{$language}/logo.png";
+
+	width: image-width($logoImage);
+	height: image-height($logoImage);
+	background: transparent inline-image($logoImage) no-repeat 0 0;
+}
+
+.icon {
+	&.overlay-icon-recipe-of-the-month {
+		$overlayImage: "src-#{$language}/recipe-of-the-month.png";
+
+		width: image-width($overlayImage);
+		height: image-height($overlayImage);
+		background-image: inline-image($overlayImage);
+	}
+
+	&.overlay-icon-new {
+		$overlayImage: "src-#{$language}/new.png";
+
+		width: image-width($overlayImage);
+		height: image-height($overlayImage);
+		background-image: inline-image($overlayImage);
+	}
+}
+
+#main-container #main-content #main-navigation li.main a.main {
+	padding: 0 10px;
+}

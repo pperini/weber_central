@@ -1,0 +1,66 @@
+.perfect-tool-finder-headings {
+	padding-bottom: 25px;
+
+	h3,
+	h4 {
+		font-size: $perfect-tool-finder-option-heading;
+	}
+
+	h3 {
+		padding-bottom: 2px;
+	}
+
+	h4 {
+		padding-bottom: 7px;
+	}
+
+	.heading {
+		height: 41px;
+		border-bottom: 1px solid $perfect-tool-finder-heading-border;
+	}
+}
+
+.perfect-tool-finder-options {
+	p {
+		top: 4px;
+	}
+
+	.trigger-comparison {
+		top: -3px;
+	}
+
+	h3 {
+		padding-bottom: 0;
+	}
+}
+
+#perfect-tool-finder-result .teaser-grid-item,
+#perfect-tool-finder-filter-container .select {
+	@include transition-property(all);
+	@include transition-duration(500ms);
+
+	&.disabled,
+	.option-container .option.disabled {
+		@include opacity(0.4);
+	}
+
+	&.hidden {
+		display: none;
+	}
+}
+
+.perfect-tool-finder-actions {
+	$actionsHeight: 55px;
+
+	left: 0;
+	position: absolute;
+	bottom: $actionsHeight * -1;
+
+	p {
+		padding: 0;
+	}
+}
+
+#perfect-tool-finder-result .teaser-grid-item {
+	margin-bottom: 94px;
+}

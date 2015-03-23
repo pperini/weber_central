@@ -1,0 +1,94 @@
+.lightbox-teaser {
+	float: left;
+	height: 250px;
+	display: inline-block;
+
+	img {
+		padding-bottom: 0;
+		border-bottom: solid 1px $community-profile-sidebar-recipe-ribbon-border;
+	}
+
+	h4 {
+		display: block;
+		margin-top: 10px;
+		color: $dark-grey;
+		padding-bottom: 0;
+		text-transform: uppercase;
+	}
+	p {
+		top: 0;
+		display: block;
+		font-size: 14px;
+		margin-top: 10px;
+		line-height: 1.4;
+		padding-bottom: 0;
+		color: $content-download-info;
+	}
+}
+
+.lightbox-teaser-content {
+	h3 {
+		font-size: 22px;
+		margin-top: 11px;
+		font-weight: bold;
+		margin-bottom: 25px;
+		padding-bottom: 10px;
+		border-bottom: solid $dark-grey 6px;
+		font-family: $font-din-light-condensed;
+	}
+
+	.image {
+
+		img {
+			float: left;
+			padding-bottom: 0;
+			margin-right: 25px;
+			border-bottom: solid 1px $community-profile-sidebar-recipe-ribbon-border;
+		}
+	}
+
+	h4 {
+		display: block;
+		margin-top: 10px;
+		color: $dark-grey;
+		padding-bottom: 0;
+		text-transform: uppercase;
+	}
+
+	.name {
+		p {
+			top: 0;
+			display: block;
+			font-size: 14px;
+			margin-top: 10px;
+			line-height: 1.4;
+			padding-bottom: 0;
+			color: $content-download-info;
+		}
+	}
+
+	.text {
+		margin-top: 31px;
+		margin-bottom: 14px;
+		color: $content-text;
+	}
+
+	.joboffer {
+		font-size: 14px;
+		padding-top: 15px;
+		margin-bottom: 14px;
+		padding-bottom: 16px;
+		border-top: solid 2px $community-profile-sidebar-recipe-ribbon-border;
+
+		a {
+			color: $content-text-link;
+		}
+	}
+}
+#message-light-box-video {
+	.lightbox-teaser-content {
+		.image {
+			margin-left: 0;
+		}
+	}
+}

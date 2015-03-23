@@ -1,0 +1,65 @@
+.locationmap {
+	height: 441px;
+	position: relative;
+	background-repeat: no-repeat;
+
+	.location {
+		display: block;
+		cursor: pointer;
+		position: absolute;
+		width: image-width("src/career-locationmap-icon.png");
+		height: image-height("src/career-locationmap-icon.png");
+		background: transparent inline-image("src/career-locationmap-icon.png") no-repeat 0 0;
+
+		&.special {
+			width: image-width("src/career-locationmap-icon-special.png");
+			height: image-height("src/career-locationmap-icon-special.png");
+			background: transparent inline-image("src/career-locationmap-icon-special.png") no-repeat 0 0;
+
+			.location-overlay {
+				top: -5px;
+				right: -4px;
+				width: image-width("src/career-location-background-special.png") - 35px;
+				height: image-height("src/career-location-background-special.png") - 40px;
+				background: inline-image("src/career-location-background-special.png") no-repeat right top;
+			}
+		}
+
+		.location-overlay {
+			display: none;
+		}
+
+		&.active {
+			.location-overlay {
+				display: block;
+			}
+		}
+	}
+
+	.location-overlay {
+		top: -6px;
+		z-index: 10;
+		right: -5px;
+		font-size: 14px;
+		line-height: 1.2;
+		position: absolute;
+		padding: 40px 15px 0px 20px;
+		font-family: $font-din-medium;
+		width: image-width("src/career-location-background.png") - 35px;
+		height: image-height("src/career-location-background.png") - 40px;
+		background: inline-image("src/career-location-background.png") no-repeat right top;
+
+		p {
+			font-size: 14px;
+			line-height: 1.2;
+			padding-bottom: 0;
+			font-family: $font-din-medium;
+		}
+
+		a {
+			color: $red;
+			margin-top: 5px;
+			display: inline-block;
+		}
+	}
+}

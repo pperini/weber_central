@@ -1,0 +1,25 @@
+.dont-print {
+	display: none !important;
+}
+
+.print-no-float {
+	float: none !important;
+}
+
+#main-container {
+	#main-content {
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+
+		#content {
+			padding-top: 20px !important;
+			padding-bottom: 0 !important;
+		}
+
+		#logo {
+			display: none;
+		}
+
+		@import "partials/elements/content/foldout_print";
+	}
+}

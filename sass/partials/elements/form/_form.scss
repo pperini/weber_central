@@ -1,0 +1,94 @@
+form {
+	margin: 0;
+	padding: 0;
+	border: none;
+
+	fieldset {
+		margin: 0;
+		padding: 0;
+		border: none;
+
+		legend {
+			display: block;
+			padding-bottom: 17px;
+			text-transform: uppercase;
+			color: $form-fieldset-legend;
+			font-size: $form-fieldset-legend-size;
+
+			@include useFontDinMedium();
+		}
+	}
+
+	h3 {
+		padding-bottom: 19px;
+	}
+
+	h4 {
+		padding-bottom: 13px;
+	}
+
+	.division {
+		height: 22px;
+		margin-bottom: 31px;
+		border-bottom: 1px solid $form-division-border;
+
+		&.checkbox-division {
+			height: 20px;
+			margin-bottom: 35px;
+		}
+	}
+
+	.info {
+		color: $from-info;
+		font-size: $from-info-size;
+	}
+
+	a.info {
+		padding: 0;
+		bottom: -7px;
+		height: 18px;
+		display: block;
+		position: relative;
+		text-decoration: none;
+	}
+}
+
+label {
+	display: block;
+	color: $form-label;
+	padding-bottom: 8px;
+	font-size: $form-label-size;
+	line-height: $form-label-line-height;
+
+	@include transition-property(color);
+	@include transition-duration(600ms);
+
+	a {
+		font-weight: bold;
+		color: $form-label;
+		text-decoration: none;
+		font-size: $form-label-size;
+	}
+
+	.error &,
+	.error & a {
+		color: $form-label-error;
+	}
+}
+
+.form-info {
+	display: block;
+	padding-top: 4px;
+	color: $from-notice;
+	margin-bottom: 31px;
+	padding-bottom: 7px;
+	font-size: $form-notice-size;
+	border-bottom: 1px solid $from-notice-border;
+}
+
+.submit-area {
+	display: block;
+	margin-top: 1px;
+	padding-top: 25px;
+	border-top: 1px solid $form-border;
+}

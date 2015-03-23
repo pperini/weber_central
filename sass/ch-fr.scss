@@ -1,0 +1,47 @@
+@import "compass";
+
+$language: "ch-fr";
+
+@import "button-icon/*.png";
+@import "ribbon-small-ch-fr/*.png";
+@import "ribbon-large-ch-fr/*.png";
+
+$button-icon-sprite-dimensions: true;
+$ribbon-small-ch-fr-sprite-dimensions: true;
+$ribbon-large-ch-fr-sprite-dimensions: true;
+
+@include all-button-icon-sprites();
+@include all-ribbon-small-ch-fr-sprites();
+@include all-ribbon-large-ch-fr-sprites();
+
+@import "partials/languages/_weber-com-language-select.scss";
+
+#logo {
+	$logoImage: "src-#{$language}/logo.png";
+
+	width: image-width($logoImage);
+	height: image-height($logoImage);
+	background: transparent inline-image($logoImage) no-repeat 0 0;
+}
+
+.icon {
+	&.overlay-icon-recipe-of-the-month {
+		$overlayImage: "src-#{$language}/recipe-of-the-month.png";
+
+		width: image-width($overlayImage);
+		height: image-height($overlayImage);
+		background-image: inline-image($overlayImage);
+	}
+
+	&.overlay-icon-new {
+		$overlayImage: "src-#{$language}/new.png";
+
+		width: image-width($overlayImage);
+		height: image-height($overlayImage);
+		background-image: inline-image($overlayImage);
+	}
+}
+
+#main-container #main-content #main-navigation li.main a.main {
+	padding: 0 10px;
+}
